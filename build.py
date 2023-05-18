@@ -46,7 +46,7 @@ context.update(contact)
 if __name__ == "__main__":
     site = Site.make_site(
         searchpath="./templates",
-        outpath="./build",
+        outpath="./build/",
         contexts=[("index.html", context)],
         staticpaths=["./static"],
     )
