@@ -1,0 +1,91 @@
+@import url("/static/css/reset.css");
+@import url("/static/css/lato.css");
+@import url("/static/css/colors.css");
+@import url("/static/css/fontawesome.css");
+
+html, body {
+
+    /* Align */
+	top: 0;
+	margin: 0;
+	padding: 0;
+
+    /* Size */
+	height: 100%;
+	min-height: 100%;
+
+    /* Font */
+    font-weight: 400;
+	font-style: normal;
+    font-family: "Lato";
+    letter-spacing: -0.022em;
+	-webkit-font-smoothing: antialiased;
+
+    /* Colors */
+	color: var(--font-color);
+	background-color: var(--background);
+}
+
+/* Link Colors */
+a:link {
+	color: var(--font-color);
+	background-color: transparent;
+	text-decoration: none;
+}
+  
+a:visited {
+	color: var(--font-color); 
+	background-color: transparent;
+	text-decoration: none;
+}
+  
+a:hover {
+	color: var(--green);
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+body {
+    /* Flex */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /* Size */
+    width: 100%;
+    padding: 1rem;
+    min-width: 160px;
+    max-width: 960px;
+
+    /* Center */
+    margin: 0 auto;
+}
+
+/* Flex & Size */
+header {
+    order: 0;
+    width: 100%;
+    flex: 0 0 10vh;
+    align-self: auto;
+    margin-bottom: 1rem;
+}
+
+/* Flex & Size */
+main {
+    order: 1;
+    width: 100%;
+    flex: 0 0 70vh;
+    align-self: auto;
+}
+
+/* Flex */
+footer {
+    order: 2;
+    width: 100%;
+    flex: 0 0 10vh;
+    align-self: auto;
+    margin-top: 1rem;
+}

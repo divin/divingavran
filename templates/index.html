@@ -1,0 +1,20 @@
+{% extends 'default.html' %}
+
+{% block content %}
+
+<main>
+    
+    <link rel = "stylesheet" type = "text/css" href = "static/css/partials/index.css"/>
+        
+    <!-- Add About Section -->
+    {% include 'partials/about.html' %}
+
+    <!-- CV Section -->
+    {% include 'partials/cv.html' %}
+
+    <!-- Add Contact Section -->
+    {% include 'partials/contact.html' %}
+
+</main>
+
+{% endblock content %}

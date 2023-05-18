@@ -1,0 +1,21 @@
+<link rel = "stylesheet" type = "text/css" href = "static/css/partials/cv.css"/>
+
+<div class="cv">
+    <p>{{ cv_description }}</p>
+    <ul class="timeline">
+
+      {% for event in cv_events %}
+        <li class="event">
+          <i class="{{ event['icon'] }}"></i>
+          <div class="event-content">
+            <p class="event-timeframe">{{ event['timeframe'] }}</p>
+            <h3>{{ event['company'] }}</h3>
+            <h4>{{ event['job'] }}</h4>
+            <p>{{ event['description'] }}</p>
+          </div>
+        </li>
+      {% endfor %}
+
+    </ul>
+    
+</div>
