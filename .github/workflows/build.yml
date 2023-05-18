@@ -37,8 +37,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@master
         with:
           commit_message: build site
-          add_options: "-f"
-          push_options: "--force"
 
       - name: Push changes
         run: |
