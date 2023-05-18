@@ -5,8 +5,12 @@ on:
       - main
 
 jobs:
-  build:
+  build-site:
     runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+      contents: write
 
     env:
       PYTHON_VERSION: 3.11 # Set up the required version of Python
@@ -29,22 +33,15 @@ jobs:
         run: |
           python build.py
 
-      - name: Upload build folder
-        uses: actions/upload-artifact@master
+      - name: Commit the build
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: build-artifact
-          path: build
-
-      - name: Download Website Artifact
-        uses: actions/download-artifact@master
-        with:
-          name: build-artifact
-          path: build
+          commit_message: build site
 
       - name: Push changes
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
+          git add /home/runner/work/divingavran.com/divingavran.com/build/
           git commit -m "build site"
           git push
