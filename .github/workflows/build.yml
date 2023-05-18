@@ -34,14 +34,12 @@ jobs:
           python build.py
 
       - name: Commit the build
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@master
         with:
           commit_message: build site
+          add_options: "-f"
+          push_options: "--force"
 
       - name: Push changes
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add /home/runner/work/divingavran.com/divingavran.com/build/
-          git commit -m "build site"
           git push
