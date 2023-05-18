@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
 
       - name: Set up Python ${{ env.PYTHON_VERSION }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@master
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -28,6 +28,18 @@ jobs:
       - name: Build site
         run: |
           python build.py
+
+      - name: Upload build folder
+        uses: actions/upload-artifact@master
+        with:
+          name: build-artifact
+          path: build
+
+      - name: Download Website Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: build-artifact
+          path: build
 
       - name: Push changes
         run: |
