@@ -2,7 +2,7 @@ from staticjinja import Site
 
 about = {
     "about_greeting": "Hello World 🌍",
-    "about_description": "I'm Divin, a data scientist with a passion for uncovering insights through data exploration. I also enjoy creating games, music, and art in my free time and showcase my work on GitHub, YouTube, itch.io, and Bandcamp. When I'm not working, I'm a proud dog dad. Check out my links below to see my latest work! 👇",
+    "about_description": "I'm Divin, a data scientist with a passion for uncovering insights through data exploration. I also enjoy creating games, music, and art in my free time and showcase my work on GitHub, YouTube, itch.io, Bandcamp and SoundCloud. When I'm not working, I'm a proud dog dad. Check out my links below to see my latest work! 👇",
 }
 
 event_1 = {
@@ -38,9 +38,37 @@ contact = {
     "contact_description": "Any questions? Would like to chat? Feel free to contact me 🤩",
 }
 
+github = {
+    "url": "https://github.com/divin",
+    "icon": "fab fa-github",
+}
+
+youtube = {
+    "url": "https://www.youtube.com/@divingavran",
+    "icon": "fab fa-youtube",
+}
+
+itchio = {
+    "url": "https://divingavran.itch.io",
+    "icon": "fab fa-itch-io",
+}
+
+bandcamp = {
+    "url": "https://divin.bandcamp.com",
+    "icon": "fab fa-bandcamp",
+}
+
+soundcloud = {
+    "url": "https://soundcloud.com/divingavran",
+    "icon": "fab fa-soundcloud",
+}
+
+social = {"social_links": [github, youtube, itchio, bandcamp, soundcloud]}
+
 context = {}
-context.update(about)
 context.update(cv)
+context.update(about)
+context.update(social)
 context.update(contact)
 
 if __name__ == "__main__":
