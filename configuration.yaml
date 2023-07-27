@@ -1,0 +1,109 @@
+title: "Divin Gavran"
+greeting: "Hello World 🌍"
+about-me: |
+  I'm Divin, a data scientist with a passion for exploring data for insights. 
+  I enjoy software and game development, music creation, art and AI, especially machine learning, natural language processing and computer vision. 
+  
+  You can find my latest work on GitHub, YouTube, itch.io, Bandcamp, SoundCloud and more. 
+  When not working, I love to go for walks with my furry companion 🐶
+
+# Social Media
+# url: link to the account
+# icon: FontAwesome 5 icon name (https://fontawesome.com/v5/search?o=r&m=free)
+social-media:
+
+  - name: "GitHub"
+    url: "https://github.com/divin"
+    icon: "fab fa-github"
+
+  - name: "YouTube"
+    url: "https://www.youtube.com/@divingavran"
+    icon: "fab fa-youtube"
+
+  - name: "Itch.io"
+    url: "https://divingavran.itch.io"
+    icon: "fab fa-itch-io"
+  
+  - name: "Patreon"
+    url: "https://patreon.com/divingavran"
+    icon: "fab fa-patreon"
+
+  - name: "Bandcamp"
+    url: "https://divin.bandcamp.com"
+    icon: "fab fa-bandcamp"
+
+  - name: "SoundCloud"
+    url: "https://soundcloud.com/divingavran"
+    icon: "fab fa-soundcloud"
+
+cv-events:
+  - name: "Data Scientist"
+    icon: "fas fa-briefcase"
+    from: "2023"
+    to: "today"
+    description: |
+      As an experienced Python developer with a solid background in statistical analysis, my focus is on extracting actionable insights from complex datasets.  
+      Leveraging my applied knowledge, I specialize in building sophisticated machine learning models, and proactively extend existing codebases to automate the analysis process even further.
+  
+  - name: "Physics, M. Sc."
+    icon: "fas fa-graduation-cap"
+    from: "2022"
+    to: "2023"
+    description: |
+      For my Master's thesis, I developed expertise in automating experimental data analysis using deep learning techniques. 
+      I focused on improving the performance of an existing object recognition model based on Faster R-CNN by using hyperparameter optimization to achieve better detection results of diffraction patterns in experimental data. 
+      Additionally, I designed and created a smaller YOLO-based model that was capable of performing similar tasks as the original model, but with significantly faster processing times.
+
+  - name: "Physics, B. Sc."
+    icon: "fas fa-graduation-cap"
+    from: "2016"
+    to: "2022"
+    description: |
+      Through my studies in physics, I developed a solid foundation in both fundamental and advanced topics. 
+      As I continued to pursue my education, I focused on specializing in computational physics, taking computer science courses and developing strong proficiency in Python. 
+      For my Bachelor's thesis, I conducted research on the formation of planets on a protoplanetary disk, gaining valuable insights into the migration of planets driven by the disk torques and offering a unique perspective on these phenomena.
+
+# Skills in percent
+skills:
+  languages:
+    german: 100
+    english: 85
+    japanese: 25
+  
+  programming:
+    python: 100
+    html: 75
+    css: 75
+    sql: 75
+    gscript: 75
+
+  tools:
+    git: 75
+    linux: 75
+    docker: 25
+    jupyter: 75
+    vscode: 75
+    blender: 25
+    logic-pro: 75
+    final-cut: 50
+    godot: 75
+
+  # adjust interests to percentage of knowledge
+  interests:
+    machine-learning: 
+    natural-language-processing: "basic"
+    computer-vision: "basic"
+    data-analysis: "intermediate"
+    game-development: "intermediate"
+    music-production: "intermediate"
+    art: "intermediate" 
+
+
+website-configuration:
+  mobile:
+    width: "100svw"
+    max-width: "600px"
+
+  desktop:
+    width: "85vw"
+    max-width: "600px"

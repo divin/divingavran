@@ -1,0 +1,40 @@
+@import url("../css/reset.css");
+@import url("../css/lato.css");
+@import url("../css/colors.css");
+@import url("../css/fontawesome.css");
+
+html,
+body {
+
+    /* Align */
+    top: 0;
+    margin: 0;
+    padding: 0;
+
+    /* Size */
+    height: 100%;
+    min-height: 100%;
+
+    /* Font */
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Lato";
+    letter-spacing: -0.022em;
+    -webkit-font-smoothing: antialiased;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 0;
+}
+
+.chakra-ui-light {
+    color: var(--dark-grey);
+    background-color: var(--off-white);
+}
+
+.chakra-ui-dark {
+    color: var(--off-white);
+    background-color: var(--dark-grey);
+}
