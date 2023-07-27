@@ -1,2 +1,6 @@
+*.py[cod]
 .DS_Store
 .vscode
+.web
+__pycache__/
+reflex.db
