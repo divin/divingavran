@@ -1,3 +1,7 @@
-from .footer import desktop_footer, mobile_footer
-from .header import desktop_header, mobile_header
-from .social_media import social_media_accounts
+from .description import description
+from .footer import footer
+from .heading import heading
+from .layout import layout
+from .navigation import navigation
+from .social_media import social_media
+from .cards import project_card

@@ -7,6 +7,5 @@ class WebsiteConfig(rx.Config):
 
 config = WebsiteConfig(
     app_name="website",
-    db_url="sqlite:///reflex.db",
     env=rx.Env.DEV,
 )

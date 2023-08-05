@@ -1,3 +1,0 @@
-I'm Divin, a **data scientist** with a passion for exploring data for insights. I enjoy **software and game development**, **music creation**, **art** and **AI**, especially machine learning, natural language processing and computer vision. 
-
-You can find my latest work on [GitHub](https://github.com/divin), [YouTube](https://www.youtube.com/@divingavran), [itch.io](https://divingavran.itch.io), [Bandcamp](https://divin.bandcamp.com), [SoundCloud](https://soundcloud.com/divingavran) and more. When not working, I love to go for walks with my furry companion 🐶

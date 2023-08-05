@@ -1,22 +1,36 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
+import os
+
 import reflex as rx
 
 from rxconfig import config
+from website.utilities import read_yaml
 
-from .pages import about_me, index
+from .pages import about, index, test, imprint, privacy, projects, contact
+from .states import State
 
-
-class State(rx.State):
-    """The app state."""
-
-    pass
-
+# Get website configuration
+configuration = read_yaml(os.getcwd() + "/configuration.yaml")
+website_config = configuration["website"]
 
 style = {
-    "font_size": "1.0rem",
-    "font_weight": "400",
-    "font_family": "Lato",
-    "font_style": "normal",
+    # Links
+    "a": {
+        "color": website_config["colors"]["text"],
+    },
+    "a:hover": {
+        "color": website_config["colors"]["accent"],
+    },
+    # Font
+    "color": website_config["colors"]["text"],
+    "font_size": website_config["font_size"],
+    "font_weight": website_config["font_family"],
+    "font_family": website_config["font_weight"],
+    # Background
+    "background_repeat": "repeat-y",
+    "background_size": r"10000% 10000%",
+    "background": website_config["colors"]["background"],
+    "background": "linear-gradient(45deg, #334c3a, #527a53)",
+    "animation": "gradientFlow 10s ease infinite",
 }
 
 stylesheets = ["css/default.css"]
@@ -25,14 +39,18 @@ app = rx.App(state=State, style=style, stylesheets=stylesheets)
 
 app.add_page(component=index, route="/", title="Divin Gavran")
 
-app.add_page(component=about_me, route="/about-me", title="Divin Gavran | About Me")
+app.add_page(component=projects, route="/projects", title="Divin Gavran | Projects")
+
+app.add_page(component=contact, route="/contact", title="Divin Gavran | Contact")
+
+app.add_page(component=about, route="/about", title="Divin Gavran | About")
 
 app.add_page(
-    component=rx.heading("Imprint"), route="/imprint", title="Divin Gavran | Imprint"
+    component=imprint, route="/imprint", title="Divin Gavran | Imprint"
 )
 
 app.add_page(
-    component=rx.heading("Privacy Policy"),
+    component=privacy,
     route="/privacy",
     title="Divin Gavran | Privacy Policy",
 )
