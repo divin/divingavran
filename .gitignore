@@ -2,6 +2,6 @@
 .DS_Store
 .vscode
 .web
-__pycache__/
+__pycache__
 reflex.db
 *.pyc
