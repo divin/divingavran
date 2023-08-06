@@ -40,13 +40,13 @@ jobs:
      
       - name: Build the website
         run: |
-          reflex export --frontend-only
+          reflex export --no-zip --frontend-only
 
-      - name: Upload frontend.zip
+      - name: Upload frontend
         uses: actions/upload-artifact@v3
         with:
           name: frontend
-          path: frontend.zip
+          path: .web/_static/
           if-no-files-found: error
   
   deploy:
@@ -61,14 +61,11 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: frontend
-          path: frontend.zip
+          path: frontend/
       
       - name: Show files
         run: ls -R
           
-      - name: Unzip frontend.zip
-        run: unzip /home/runner/work/divingavran.com/divingavran.com/frontend.zip -d /home/runner/work/divingavran.com/divingavran.com/frontend
-      
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2
         with:
