@@ -20,10 +20,7 @@ This is my personal website built using [Reflex](https://reflex.dev), a Python f
 4. Visit `localhost:8000` in your web browser to access the website locally.
 
 ## Deployment
-This website is automatically deployed to Netlify whenever new changes are pushed to the main branch. The deployment process includes building the site and making it accessible to the public at [www.divingavran.com](https://www.divingavran.com).
-
-## Contributions
-Bug reports, and feature requests are welcome! Feel free to fork this repository and submit a pull request. Please ensure that your code follows the established coding style and conventions.
+This website is automatically deployed to Netlify whenever new changes are pushed to the main branch.
 
 ## License
-This project is licensed under the MIT License, which allows you to use, modify, and distribute the code for personal and commercial purposes. See [LICENSE](LICENSE) for more information.
+This project is licensed under the GNU General Public License v3.0, which allows you to use, modify, and distribute the code for personal and commercial purposes. See [LICENSE](LICENSE) for more information.
