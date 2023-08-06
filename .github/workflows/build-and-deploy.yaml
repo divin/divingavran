@@ -22,12 +22,12 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: "18"
       
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
-          bun-version: 0.6.9
+          bun-version: "0.6.9"
       
       - name: Install dependencies
         run: |
@@ -36,16 +36,12 @@ jobs:
      
       - name: Build the website
         run: |
-          reflex export --frontend-only
-      
-      - name: Unzip
-        run: |
-          unzip -o frontend.zip -d frontend
+          reflex export --no-zip --frontend-only
       
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2
         with:
-          publish-dir: "./frontend"
+          publish-dir: "./.web/_static"
           production-branch: "main"
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
