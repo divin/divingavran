@@ -67,7 +67,7 @@ jobs:
         run: ls -R
           
       - name: Unzip frontend.zip
-        run: unzip ./frontend.zip
+        run: unzip /home/runner/work/divingavran.com/divingavran.com/frontend.zip -d /home/runner/work/divingavran.com/divingavran.com/frontend
       
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2
