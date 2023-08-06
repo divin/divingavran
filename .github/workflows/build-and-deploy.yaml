@@ -43,7 +43,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: frontend
-          path: "./frontend.zip"
+          path: /frontend.zip
+          if-no-files-found: error
   
   deploy:
     needs: build
@@ -65,7 +66,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2
         with:
-          publish-dir: "./frontend"
+          publish-dir: "frontend/"
           production-branch: "main"
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
