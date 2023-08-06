@@ -64,8 +64,8 @@ jobs:
           path: frontend.zip
       
       - name: Show files
-          run: ls -R
-      
+        run: ls -R
+          
       - name: Unzip frontend.zip
         run: unzip frontend.zip -d frontend
       
