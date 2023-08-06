@@ -41,9 +41,6 @@ jobs:
       - name: Build the website
         run: |
           reflex export --frontend-only
-    
-      - name: Show files
-        run: ls -R
 
       - name: Upload frontend.zip
         uses: actions/upload-artifact@v3
@@ -65,6 +62,9 @@ jobs:
         with:
           name: frontend
           path: frontend.zip
+      
+      - name: Show files
+          run: ls -R
       
       - name: Unzip frontend.zip
         run: unzip frontend.zip -d frontend
