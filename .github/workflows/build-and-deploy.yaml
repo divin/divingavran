@@ -24,9 +24,10 @@ jobs:
         with:
           node-version: 18
       
-      - name: Install Bun
-        run: |
-          npm install -g bun
+      - name: Setup Bun
+        - uses: oven-sh/setup-bun@v1
+          with:
+            bun-version: latest
       
       - name: Install dependencies
         run: |
