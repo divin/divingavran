@@ -24,6 +24,10 @@ jobs:
         with:
           node-version: 18
       
+      - name: Install Bun
+        run: |
+          npm install -g bun
+      
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
