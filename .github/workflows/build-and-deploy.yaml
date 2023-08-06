@@ -12,7 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout the repository
+        uses: actions/checkout@v3
       
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
@@ -36,12 +37,37 @@ jobs:
      
       - name: Build the website
         run: |
-          reflex export --no-zip --frontend-only
+          reflex export --frontend-only
+      
+      - name: Upload frontend.zip
+        uses: actions/upload-artifact@v3
+        with:
+          name: frontend
+          path: frontend.zip
+  
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Clone the repoitory
+        uses: actions/checkout@v3
+        with:
+          ref: website-build
+
+      - name: Download website build
+        uses: actions/download-artifact@v3
+        with:
+          name: frontend
+          path: frontend.zip
+      
+      - name: Unzip frontend.zip
+        run: unzip frontend.zip -d frontend
       
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2
         with:
-          publish-dir: "./.web/_static"
+          publish-dir: "./frontend"
           production-branch: "main"
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
