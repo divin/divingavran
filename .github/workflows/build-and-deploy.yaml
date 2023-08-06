@@ -43,23 +43,21 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: frontend
-          path: frontend.zip
+          path: "./frontend.zip"
   
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
       
-      - name: Clone the repoitory
+      - name: Checkout the repository
         uses: actions/checkout@v3
-        with:
-          ref: website-build
 
       - name: Download website build
         uses: actions/download-artifact@v3
         with:
           name: frontend
-          path: frontend.zip
+          path: "./frontend.zip"
       
       - name: Unzip frontend.zip
         run: unzip frontend.zip -d frontend
