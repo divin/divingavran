@@ -29,4 +29,9 @@ exclude = [
     "__pycache__",
     "assets",
     ".web",
+    "__init__.py",
+]
+extend-ignore = "E203"
+per-file-ignores = [
+    "website/website.py:F601"
 ]

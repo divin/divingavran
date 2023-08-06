@@ -3,8 +3,8 @@ from typing import Any
 
 import reflex as rx
 
-from website.utilities import read_yaml
 from website.components import description, heading, layout
+from website.utilities import read_yaml
 
 
 def hex_to_rgb(hex: str) -> tuple[int, int, int]:
@@ -36,7 +36,9 @@ def skill(name: str, value: int, color: str, **props: Any) -> rx.Component:
     )
 
 
-def accordion(header: rx.Component, content: rx.Component, **props: Any) -> rx.Component:
+def accordion(
+    header: rx.Component, content: rx.Component, **props: Any
+) -> rx.Component:
     """Creates an accordion component."""
     return rx.accordion(
         rx.accordion_item(
@@ -62,6 +64,7 @@ def accordion(header: rx.Component, content: rx.Component, **props: Any) -> rx.C
         **props,
     )
 
+
 def skills_card(
     header: rx.Component,
     skills: list[rx.Component],
@@ -71,8 +74,10 @@ def skills_card(
     """Creates a skills card component."""
     rgb = hex_to_rgb(background_color)
     content = rx.flex(*skills, direction="column", **props)
-    background_color=f"rgba({rgb[0]}, {rgb[1]}, {rgb[2]}, 0.25)"
-    return accordion(header=header, content=content, background_color=background_color, **props)
+    background_color = f"rgba({rgb[0]}, {rgb[1]}, {rgb[2]}, 0.25)"
+    return accordion(
+        header=header, content=content, background_color=background_color, **props
+    )
 
 
 def skills(configuration: dict) -> rx.Component:
@@ -96,22 +101,34 @@ def skills(configuration: dict) -> rx.Component:
     ]
     return rx.flex(
         skills_card(
-            header=rx.hstack(rx.html("<i class='fas fa-language'></i>"), rx.text("Languages", font_weight="600")),
+            header=rx.hstack(
+                rx.html("<i class='fas fa-language'></i>"),
+                rx.text("Languages", font_weight="600"),
+            ),
             skills=languages,
             background_color=background_color,
         ),
         skills_card(
-            header=rx.hstack(rx.html("<i class='fas fa-code'></i>"), rx.text("Coding", font_weight="600")),
+            header=rx.hstack(
+                rx.html("<i class='fas fa-code'></i>"),
+                rx.text("Coding", font_weight="600"),
+            ),
             skills=coding,
             background_color=background_color,
         ),
         skills_card(
-            header=rx.hstack(rx.html("<i class='fab fa-python'></i>"), rx.text("Python Libraries", font_weight="600")),
+            header=rx.hstack(
+                rx.html("<i class='fab fa-python'></i>"),
+                rx.text("Python Libraries", font_weight="600"),
+            ),
             skills=python,
             background_color=background_color,
         ),
         skills_card(
-        header=rx.hstack(rx.html("<i class='fas fa-tools'></i>"), rx.text("Tools", font_weight="600")),
+            header=rx.hstack(
+                rx.html("<i class='fas fa-tools'></i>"),
+                rx.text("Tools", font_weight="600"),
+            ),
             skills=tools,
             background_color=background_color,
         ),
@@ -151,22 +168,31 @@ def background(configuration: dict, **props) -> rx.Component:
     """Creates a background component."""
     background_color = configuration["website"]["colors"]["accent"]
     rgb = hex_to_rgb(background_color)
-    cv_events = [background_event(event, background_color) for event in configuration["background"]]
+    cv_events = [
+        background_event(event, background_color)
+        for event in configuration["background"]
+    ]
 
-    header=rx.hstack(rx.html("<i class='fas fa-trophy'></i>"), rx.text("Background", font_weight="600"))
-    content=rx.flex(*cv_events, gap="1.0rem", direction="column", **props)
-    background_color=f"rgba({rgb[0]}, {rgb[1]}, {rgb[2]}, 0.25)"
-    return accordion(header=header, content=content, background_color=background_color, **props)
+    header = rx.hstack(
+        rx.html("<i class='fas fa-trophy'></i>"),
+        rx.text("Background", font_weight="600"),
+    )
+    content = rx.flex(*cv_events, gap="1.0rem", direction="column", **props)
+    background_color = f"rgba({rgb[0]}, {rgb[1]}, {rgb[2]}, 0.25)"
+    return accordion(
+        header=header, content=content, background_color=background_color, **props
+    )
 
 
 def about() -> rx.Component:
     """Creates the about page."""
     configuration = read_yaml(os.getcwd() + "/configuration.yaml")
+    image = configuration["about"]["image"]
     content = [
         heading([rx.text(configuration["about"]["greeting"])], flex="0 1 30%"),
         rx.flex(
             rx.image(
-                src="images/about.jpg",
+                src=image,
                 width="100%",
                 flex="1 1 auto",
                 border_radius="0.5rem",

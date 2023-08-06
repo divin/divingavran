@@ -1,5 +1,3 @@
-from typing import Any
-
 import reflex as rx
 
 from .footer import footer

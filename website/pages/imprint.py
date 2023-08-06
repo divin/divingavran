@@ -1,10 +1,9 @@
 import os
-from typing import Any
 
 import reflex as rx
 
-from website.utilities import read_yaml, read_markdown
-from website.components import heading, layout
+from website.components import layout
+from website.utilities import read_markdown, read_yaml
 
 
 def imprint() -> rx.Component:
@@ -16,7 +15,7 @@ def imprint() -> rx.Component:
             rx.markdown(text),
             text_align="left",
             width="clamp(256px, 50%, 1280px)",
-            font_size="clamp(1.0rem, 2.0svh, 3.0rem)"
+            font_size="clamp(1.0rem, 2.0svh, 3.0rem)",
         )
     ]
     return layout(content, configuration)

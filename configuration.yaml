@@ -7,6 +7,7 @@ home:
 
 about:
   greeting: I'm Divin.
+  image: "/images/about.jpg"
   description: |
     I'm a data scientist with a background in physics who loves unraveling insights from complex data.<br><br>
     When I'm not crunching numbers, you'll find me immersed in software and game development, creating music, exploring art, and diving into the fascinating realms of AI.<br><br>

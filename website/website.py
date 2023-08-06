@@ -2,10 +2,9 @@ import os
 
 import reflex as rx
 
-from rxconfig import config
 from website.utilities import read_yaml
 
-from .pages import about, index, test, imprint, privacy, projects, contact
+from .pages import about, imprint, index, privacy, projects
 from .states import State
 
 # Get website configuration
@@ -29,7 +28,7 @@ style = {
     "background_repeat": "repeat-y",
     "background_size": r"10000% 10000%",
     "background": website_config["colors"]["background"],
-    "background": "linear-gradient(45deg, #334c3a, #527a53)",
+    "background": "linear-gradient(45deg, #334c3a, #527a53)",  # noqa: F601
     "animation": "gradientFlow 10s ease infinite",
 }
 
@@ -41,13 +40,9 @@ app.add_page(component=index, route="/", title="Divin Gavran")
 
 app.add_page(component=projects, route="/projects", title="Divin Gavran | Projects")
 
-app.add_page(component=contact, route="/contact", title="Divin Gavran | Contact")
-
 app.add_page(component=about, route="/about", title="Divin Gavran | About")
 
-app.add_page(
-    component=imprint, route="/imprint", title="Divin Gavran | Imprint"
-)
+app.add_page(component=imprint, route="/imprint", title="Divin Gavran | Imprint")
 
 app.add_page(
     component=privacy,
