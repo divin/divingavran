@@ -48,6 +48,7 @@ jobs:
           name: frontend
           path: .web/_static/
           if-no-files-found: error
+          retention-days: 1
   
   deploy:
     needs: build
