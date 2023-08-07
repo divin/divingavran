@@ -6,7 +6,11 @@ import reflex as rx
 def social_media(configuration: dict, **props: Any) -> rx.Component:
     social_media_accounts = configuration["social-media"]
     social_media_accounts = [
-        rx.link(rx.html(f"<i class='{account['icon']}'></i>"), href=account["url"])
+        rx.link(
+            rx.html(f"<i class='{account['icon']}'></i>"),
+            href=account["url"],
+            is_external=True,
+        )
         for account in social_media_accounts
     ]
     return rx.center(
