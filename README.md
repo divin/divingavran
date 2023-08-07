@@ -1,6 +1,6 @@
 # My Personal Website
 
-This is my personal website built using [Reflex](https://reflex.dev), a Python framework for writing web apps and websites. It showcases my work, provides information about me, and serves as a platform to connect with others.
+This is my personal website built using [Reflex](https://reflex.dev), a Python framework for writing web apps and websites. It showcases my work, and provides information about me. I plan to add more features in the future.
 
 ## Technologies Used
 * **Reflex**: A Python web framework designed for building modern web applications and websites.
@@ -16,8 +16,9 @@ This is my personal website built using [Reflex](https://reflex.dev), a Python f
 ## Setup Instructions
 1. Clone the repository using `git clone`.
 2. Install the required dependencies with `pip install -r requirements.txt` (Warning: Node.js is required).
-3. Run the development server using `reflex run`.
-4. Visit `localhost:8000` in your web browser to access the website locally.
+3. Initialize Reflex with `reflex init`.
+4. Run the development server using `reflex run`.
+5. Visit `localhost:8000` in your web browser to access the website locally.
 
 ## Deployment
 This website is automatically deployed to Netlify whenever new changes are pushed to the main branch.
