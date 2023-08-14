@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+      - testing-github-pages
 
 jobs:
   build:
@@ -64,12 +62,8 @@ jobs:
           name: frontend
           path: frontend/
           
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          publish-dir: frontend/
-          production-branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: frontend/
