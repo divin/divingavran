@@ -70,3 +70,21 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: frontend/
+      
+      # This part is important, otherwise GitHub Pages will try to build the website as a Jekyll website
+      - name: Checkout branch 🛎️
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+      
+      - name: Touch .nojekyll 👉
+        run: |
+          touch .nojekyll
+      
+      - name: Commit changes 📦
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .nojekyll
+          git commit -m "Added .nojekyll"
+          git push
