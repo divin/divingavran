@@ -78,18 +78,18 @@ jobs:
           ref: gh-pages
       
       - name: Check if .nojekyll exists 📦
-        id: file_existence
-        uses: andstor/file-existence-action@v1
+        id: check_files
+        uses: andstor/file-existence-action@v2
         with:
           files: ".nojekyll"
       
       - name: Touch .nojekyll 👉
-        if: steps.file_existence.outputs.files_exists == 'false'
+        if: steps.check_files.outputs.files_exists == 'false'
         run: |
           touch .nojekyll
       
       - name: Commit changes 📦
-        if: steps.file_existence.outputs.files_exists == 'false'
+        if: steps.check_files.outputs.files_exists == 'false'
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
