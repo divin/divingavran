@@ -2,15 +2,19 @@ from typing import Any
 
 import reflex as rx
 
+from divingavran.utilities import read_yaml
+
 from .site_end import site_end
 from .social_media import social_media
 
 
-def footer(configuration: dict, **props: Any) -> rx.Component:
+def footer(**props: Any) -> rx.Component:
+    config = read_yaml("config.yaml")
+    accounts = config["accounts"]
     return rx.center(
         rx.flex(
-            social_media(configuration),
-            site_end(font_size="0.5em"),
+            social_media(accounts=accounts),
+            site_end(font_size="0.85em"),
             justify="center",
             direction="column",
             align_items="center",
