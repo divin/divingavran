@@ -3,7 +3,11 @@ name = "divingavran"
 version = "1.0.0"
 description = "Add your description here"
 authors = [{ name = "Divin Gavran", email = "hello@divingavran.com" }]
-dependencies = ["reflex>=0.4.9", "pyyaml>=6.0.1", "ruff>=0.4.2"]
+dependencies = [
+    "reflex>=0.4.9",
+    "pyyaml>=6.0.1",
+    "ruff>=0.4.2",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
