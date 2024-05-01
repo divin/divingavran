@@ -13,11 +13,12 @@ style = {
         "color": "#eeeeee",
     },
     "a:hover": {"color": "#2e6960"},
+    "background_color": "#0a0c0b",
 }
 
 stylesheets = ["css/default.css"]
 theme = rx.theme(
-    appearance="dark", has_background=True, radius="medium", accent_color="green"
+    appearance="dark", has_background=False, radius="medium", accent_color="green"
 )
 
 app = rx.App(
