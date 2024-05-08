@@ -2,6 +2,10 @@
 # source_url: The url from the game's embed code
 # project_url: The url to the game's page
 games:
+  - name: "Siege of Syracuse"
+    embed_id: "2693906"
+    project_url: "https://divingavran.itch.io/siege-of-syracuse"
+
   - name: "Double Check"
     embed_id: "2658120"
     project_url: "https://divingavran.itch.io/double-check"
