@@ -1,10 +1,10 @@
 [project]
 name = "divingavran"
 version = "1.0.0"
-description = "Add your description here"
+description = "My personal website."
 authors = [{ name = "Divin Gavran", email = "hello@divingavran.com" }]
 dependencies = [
-    "reflex>=0.4.9",
+    "reflex>=0.5.1",
     "pyyaml>=6.0.1",
     "ruff>=0.4.2",
 ]

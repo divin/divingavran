@@ -10,18 +10,6 @@ games:
     embed_id: "2658120"
     project_url: "https://divingavran.itch.io/double-check"
 
-  - name: "The Royal Game of Ur"
-    embed_id: "1620226"
-    project_url: "https://divingavran.itch.io/the-royal-game-of-ur"
-
-  - name: "Blob Out!"
-    embed_id: "1579651"
-    project_url: "https://divingavran.itch.io/blob-out"
-
-  - name: "Flappy Raven"
-    embed_id: "1938586"
-    project_url: "https://divingavran.itch.io/flappy-raven"
-
 # Social Media
 # href: link to the account
 # icon: FontAwesome 5 icon name (https://fontawesome.com/v5/search?o=r&m=free)

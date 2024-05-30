@@ -6,6 +6,7 @@
 #   features: []
 #   all-features: false
 #   with-sources: false
+#   generate-hashes: false
 
 -e file:.
 alembic==1.13.1
@@ -122,7 +123,7 @@ readme-renderer==43.0
     # via twine
 redis==5.0.4
     # via reflex
-reflex==0.4.9
+reflex==0.5.1
     # via divingavran
 reflex-hosting-cli==0.1.13
     # via reflex
