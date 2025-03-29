@@ -25,3 +25,11 @@ accounts:
   - name: "Itch.io"
     href: "https://divingavran.itch.io"
     icon: "fab fa-itch-io"
+
+  - name: "Bandcamp"
+    href: "https://divin.bandcamp.com"
+    icon: "fab fa-bandcamp"
+
+  - name: "SoundCloud"
+    href: "https://soundcloud.com/divingavran"
+    icon: "fab fa-soundcloud"
