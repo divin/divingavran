@@ -1,3 +1,5 @@
+.states
+assets/external/
 *.aseprite
 *.db
 *.py[cod]
