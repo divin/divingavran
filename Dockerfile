@@ -6,11 +6,13 @@
 # edge by the given platform.
 FROM python:3.12.2-slim
 
+# To check if the app is running in production mode
+ARG IS_PRODUCTION
 # If the service expects a different port, provide it here (f.e Render expects port 10000)
 ARG PORT=8080
 # Only set for local/direct access. When TLS is used, the API_URL is assumed to be the same as the frontend.
 ARG API_URL
-ENV PORT=$PORT API_URL=${API_URL:-http://localhost:$PORT}
+ENV PORT=$PORT API_URL=${API_URL:-http://localhost:$PORT} IS_PRODUCTION=$IS_PRODUCTION
 
 # Install Caddy server and unzip inside image
 RUN apt-get update -y && apt-get install -y caddy unzip curl && rm -rf /var/lib/apt/lists/*
