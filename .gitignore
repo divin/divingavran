@@ -1,3 +1,5 @@
+.states
+assets/external/
 *.aseprite
 *.db
 *.py[cod]
@@ -9,3 +11,4 @@
 .web
 __pycache__/
 reflex.db
+.ropeproject
