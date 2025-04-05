@@ -2,11 +2,14 @@ from typing import Any
 
 import reflex as rx
 
+from divingavran.constants import FONT_COLOR
+
 
 def account(name: str, icon: str, href: str) -> rx.Component:
     return rx.link(
         rx.html(f"<i class='{icon}'></i>"),
         href=href,
+        color=FONT_COLOR,
         is_external=True,
         font_size="2.0em",
     )
