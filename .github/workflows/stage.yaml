@@ -1,8 +1,7 @@
 name: Deploy to Railway
 
 on:
-  release:
-    types: [prereleased]
+  workflow_dispatch:
 
 jobs:
   deploy:
