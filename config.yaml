@@ -10,6 +10,20 @@ games:
     embed_id: "2658120"
     project_url: "https://divingavran.itch.io/double-check"
 
+music:
+  - url: https://divin.bandcamp.com/track/outer-space
+  - url: https://divin.bandcamp.com/track/super-bright
+  - url: https://divin.bandcamp.com/track/not-sure-why
+  - url: https://divin.bandcamp.com/track/hooked
+  - url: https://divin.bandcamp.com/track/deep-dip
+  - url: https://divin.bandcamp.com/track/funkey
+  - url: https://divin.bandcamp.com/album/a-i-made-this
+  - url: https://divin.bandcamp.com/track/--15
+  - url: https://divin.bandcamp.com/album/-
+  - url: https://divin.bandcamp.com/album/--2
+  - url: https://divin.bandcamp.com/album/--4
+  - url: https://divin.bandcamp.com/album/--5
+
 # Social Media
 # href: link to the account
 # icon: FontAwesome 5 icon name (https://fontawesome.com/v5/search?o=r&m=free)

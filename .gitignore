@@ -11,3 +11,4 @@ assets/external/
 .web
 __pycache__/
 reflex.db
+.ropeproject

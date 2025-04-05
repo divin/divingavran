@@ -3,15 +3,15 @@ from typing import Any
 
 import reflex as rx
 
+from divingavran.constants import FONT_COLOR
+
 
 def site_end(seperator: str = "|", **props: Any) -> rx.Component:
     return rx.center(
         rx.flex(
-            rx.link(f"{date.today().strftime('%Y')} © Divin", href="/"),
-            seperator,
-            rx.link("Imprint", href="/imprint"),
-            seperator,
-            rx.link("Privacy Policy", href="/privacy"),
+            rx.link(
+                f"{date.today().strftime('%Y')} © Divin", href="/", color=FONT_COLOR
+            ),
             gap="0.5em",
             direction="row",
             justify="center",
