@@ -25,7 +25,7 @@ theme = rx.theme(
 )
 
 head_components = []
-is_production = os.environ.get("IS_PRODUCTION", "False") == "True"
+is_production = str(os.environ.get("IS_PRODUCTION", "False")) == "True"
 if is_production:
     head_components.append(
         rx.el.script(
