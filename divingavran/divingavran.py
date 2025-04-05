@@ -28,14 +28,18 @@ head_components = []
 is_production = os.environ.get("IS_PRODUCTION", "False") == "True"
 if is_production:
     head_components.append(
-        rx.el.html(
-            '<script defer src="https://cyber-earwig.pikapod.net/script.js" data-website-id="b20f5d59-9995-4687-be19-dee4c854b25a"></script>'
+        rx.el.script(
+            defer=True,
+            src="https://cyber-earwig.pikapod.net/script.js",
+            data_website_id="b20f5d59-9995-4687-be19-dee4c854b25a",
         )
     )
 else:
     head_components.append(
-        rx.el.html(
-            '<script defer src="https://cyber-earwig.pikapod.net/script.js" data-website-id="0d9d1f2b-b6fb-4859-9eab-46ca0602034d"></script>'
+        rx.el.script(
+            defer=True,
+            src="https://cyber-earwig.pikapod.net/script.js",
+            data_website_id="0d9d1f2b-b6fb-4859-9eab-46ca0602034d",
         )
     )
 
