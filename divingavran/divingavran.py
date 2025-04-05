@@ -1,17 +1,17 @@
+import os
+
 import reflex as rx
 
-from divingavran.pages import home, privacy, imprint, about, music, games, apps, blog
+from divingavran.constants import BACKGROUND_COLOR, FONT_COLOR, LINK_FONT_COLOR
+from divingavran.pages import about, error, games, home, music, news
 
 style = {
-    "color": "#eeeeee",
+    "color": FONT_COLOR,
     "font_size": "1.0em",
     "font_family": "Lato",
     "font_weight": "400",
-    #"a": {
-    #    "color": "#eeeeee",
-    #},
-    "a:hover": {"color": "#2e6960"},
-    "background_color": "#0a0c0b",
+    "a:hover": {"color": LINK_FONT_COLOR},
+    "background_color": BACKGROUND_COLOR,
 }
 
 stylesheets = [
@@ -24,20 +24,30 @@ theme = rx.theme(
     appearance="dark", has_background=False, radius="medium", accent_color="green"
 )
 
+head_components = []
+if os.environ.get("IS_PRODUCTION", False):
+    head_components.append(
+        rx.el.script(
+            '<script defer src="https://cyber-earwig.pikapod.net/script.js" data-website-id="b20f5d59-9995-4687-be19-dee4c854b25a"></script>'
+        )
+    )
+else:
+    head_components.append(
+        rx.el.script(
+            '<script defer src="https://cyber-earwig.pikapod.net/script.js" data-website-id="0d9d1f2b-b6fb-4859-9eab-46ca0602034d"></script>'
+        )
+    )
+
 app = rx.App(
     theme=theme,
-    style=style,
-    head_components=[
-        rx.el.script('<script defer src="https://cyber-earwig.pikapod.net/script.js" data-website-id="b20f5d59-9995-4687-be19-dee4c854b25a"></script>')
-    ],
+    style=style,  # type: ignore
+    head_components=head_components,
     stylesheets=stylesheets,
 )
 
-app.add_page(home, title="Divin Gavran", route="/")
-app.add_page(blog, title="Blog | Divin Gavran", route="/blog")
-app.add_page(about, title="About | Divin Gavran", route="/about")
-app.add_page(games, title="Games | Divin Gavran", route="/games")
-app.add_page(music, title="Music | Divin Gavran", route="/music")
-app.add_page(apps, title="Apps | Divin Gavran", route="/apps")
-app.add_page(privacy, title="Privacy | Divin Gavran", route="/privacy")
-app.add_page(imprint, title="Imprint | Divin Gavran", route="/imprint")
+app.add_page(home(), title="Divin Gavran", route="/")
+app.add_page(error(), title="404 | Divin Gavran", route="/404")
+app.add_page(news(), title="News | Divin Gavran", route="/news")
+app.add_page(about(), title="About | Divin Gavran", route="/about")
+app.add_page(games(), title="Games | Divin Gavran", route="/games")
+app.add_page(music(), title="Music | Divin Gavran", route="/music")

@@ -1,0 +1,16 @@
+name: Deploy to Railway
+
+on:
+  release:
+    types: [prereleased]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: ghcr.io/railwayapp/cli:latest
+    env:
+      SVC_ID: divingavran.com
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_STAGE }}
+    steps:
+      - uses: actions/checkout@v3
+      - run: railway up --service=${{ env.SVC_ID }} --ci --environment staging

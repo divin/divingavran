@@ -5,10 +5,10 @@ from divingavran.layouts.default import default_layout
 from divingavran.utilities import read_markdown_file
 
 
-def about() -> rx.Component:
-    content = read_markdown_file("content/about.md")
+def news() -> rx.Component:
+    content = read_markdown_file("content/news.md")
     return default_layout(
-        title="About 🙋",
+        title="News 📰",
         components=[
             rx.markdown(
                 content,

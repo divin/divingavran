@@ -1,6 +1,7 @@
 import reflex as rx
 
 from divingavran.components.footer import footer
+from divingavran.constants import FONT_COLOR, LINK_FONT_COLOR
 
 
 def body(components: list[rx.Component], **kwargs) -> rx.Component:
@@ -28,21 +29,23 @@ def main(components: list[rx.Component], **kwargs) -> rx.Component:
         **kwargs,
     )
 
+
 def _navigation_item(text: str, href: str) -> rx.Component:
     return rx.link(
         text,
         href=href,
-        color=rx.cond(rx.State.router.page.path == href, "#2e6960", "#eeeeee"),
+        color=rx.cond(rx.State.router.page.path == href, LINK_FONT_COLOR, FONT_COLOR),
         text_decoration=rx.cond(rx.State.router.page.path == href, "underline", "none"),
     )
+
 
 def navigation_bar() -> rx.Component:
     return rx.flex(
         _navigation_item(text="Home", href="/"),
         _navigation_item(text="Games", href="/games"),
-        _navigation_item(text="Apps", href="/apps"),
+        # _navigation_item(text="Apps", href="/apps"),
         _navigation_item(text="Music", href="/music"),
-        _navigation_item(text="Blog", href="/blog"),
+        # _navigation_item(text="TIL", href="/til"),
         _navigation_item(text="About", href="/about"),
         direction="row",
         justify_content="center",
@@ -53,8 +56,12 @@ def navigation_bar() -> rx.Component:
 
 def header(**kwargs) -> rx.Component:
     return rx.flex(
-        #rx.link(rx.image(src="/logo.png", width="128px", height="auto"), href="/"),
-        rx.heading("Divin Gavran", size="8", margin="1.0em 0.0em 0.0em 0.0em"),
+        rx.link(
+            rx.heading("Divin Gavran", size="8", margin="1.0em 0.0em 0.25em 0.0em"),
+            href="/",
+            color=FONT_COLOR,
+            text_decoration="none",
+        ),
         direction="column",
         justify_content="center",
         align_items="center",
@@ -72,7 +79,12 @@ def default_layout(
                 [
                     header(),
                     navigation_bar(),
-                    rx.heading(title, size="6", padding="0.5em"),
+                    rx.heading(
+                        title,
+                        size="6",
+                        margin_top="0.5em",
+                        padding="0.0em",
+                    ),
                     *components,
                     footer(),
                 ]

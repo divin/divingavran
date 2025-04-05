@@ -1,0 +1,17 @@
+Here you'll find the latest news about my doings:
+
+- 31.03.2025: Finished my new website! 🎉
+- 30.03.2025: Released [Outer Space](https://divin.bandcamp.com/track/outer-space) 🎶
+- 23.03.2025: Released [Super Bright](https://divin.bandcamp.com/track/super-bright) 🎶
+- 16.03.2025: Released [Not sure why](https://divin.bandcamp.com/track/not-sure-why) 🎶
+- 09.03.2025: Released [Hooked](https://divin.bandcamp.com/track/hooked) 🎶
+- 02.03.2025: Released [Deep Dip](https://divin.bandcamp.com/track/deep-dip) 🎶
+- 23.02.2025: Released [Funkey](https://divin.bandcamp.com/track/funkey) 🎶
+- 15.02.2025: Released [(A)I Made This](https://divin.bandcamp.com/album/a-i-made-this) 🎶
+- 15.02.2025: Released [インド](https://divin.bandcamp.com/track/--15) 🎶
+- 18.07.2024: Released [雨の夜](https://divin.bandcamp.com/album/-) 🎶
+- 16.07.2024: Released [どっぷり](https://divin.bandcamp.com/album/--2) 🎶
+- 15.07.2024: Released [踊り](https://divin.bandcamp.com/album/--4) 🎶
+- 08.05.2024: Released [Siege of Syracuse](https://divingavran.itch.io/siege-of-syracuse) 🎮
+- 21.04.2024: Released [Double Check](https://divingavran.itch.io/double-check) 🎮
+- 29.03.2023: Released [うるさい](https://divin.bandcamp.com/album/--5) 🎶

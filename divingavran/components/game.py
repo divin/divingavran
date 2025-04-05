@@ -1,5 +1,7 @@
 import reflex as rx
 
+from divingavran.constants import FONT_COLOR, LINK_FONT_COLOR
+
 
 def _embed_itchio(
     name: str,
@@ -7,9 +9,9 @@ def _embed_itchio(
     project_url: str,
     width: int | str,
     height: int | str = "167",
-    foreground_color: str = "#eeeeee",
+    foreground_color: str = FONT_COLOR,
     background_color: str = "#222222",
-    link_color: str = "#2e6960",
+    link_color: str = LINK_FONT_COLOR,
     border_color: str = "#222222",
     **kwargs,
 ) -> rx.Component:

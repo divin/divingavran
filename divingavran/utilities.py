@@ -16,12 +16,12 @@ def read_yaml(file: str) -> Any:
         try:
             content: Any = yaml.safe_load(stream=stream)
         except yaml.YAMLError as error:
-            print(error)
+            raise error
 
     return content
 
 
-def read_markdown_file(file: str) -> str:
+def read_markdown_file(file: str, number_of_lines: int | None = None) -> str:
     """Read a markdown file and return its content.
 
     Args:
@@ -31,4 +31,7 @@ def read_markdown_file(file: str) -> str:
         str: The content of the markdown file.
     """
     with open(file=file, mode="r") as markdown_file:
+        if number_of_lines:
+            return "".join(list(markdown_file)[:number_of_lines])
+
         return markdown_file.read()
