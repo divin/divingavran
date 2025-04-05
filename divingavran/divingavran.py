@@ -25,15 +25,16 @@ theme = rx.theme(
 )
 
 head_components = []
-if os.environ.get("IS_PRODUCTION", False):
+is_production = os.environ.get("IS_PRODUCTION", "False") == "True"
+if is_production:
     head_components.append(
-        rx.el.script(
+        rx.el.html(
             '<script defer src="https://cyber-earwig.pikapod.net/script.js" data-website-id="b20f5d59-9995-4687-be19-dee4c854b25a"></script>'
         )
     )
 else:
     head_components.append(
-        rx.el.script(
+        rx.el.html(
             '<script defer src="https://cyber-earwig.pikapod.net/script.js" data-website-id="0d9d1f2b-b6fb-4859-9eab-46ca0602034d"></script>'
         )
     )
