@@ -11,6 +11,8 @@ def account(name: str, icon: str, href: str) -> rx.Component:
         href=href,
         color=FONT_COLOR,
         is_external=True,
+        data_umami_event="external_link_clicked",
+        data_umami_event_url=href,
         font_size="2.0em",
     )
 
