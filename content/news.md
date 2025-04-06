@@ -1,6 +1,6 @@
 Here you'll find the latest news about my doings:
 
-- 31.03.2025: Finished my new website! 🎉
+- 06.04.2025: Finished my new website! 🎉
 - 30.03.2025: Released [Outer Space](https://divin.bandcamp.com/track/outer-space) 🎶
 - 23.03.2025: Released [Super Bright](https://divin.bandcamp.com/track/super-bright) 🎶
 - 16.03.2025: Released [Not sure why](https://divin.bandcamp.com/track/not-sure-why) 🎶
