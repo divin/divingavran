@@ -1,27 +1,24 @@
 # 🏠 My Personal Website
 
-This is my personal website built using [Reflex](https://reflex.dev), a Python framework for writing web apps and websites. It showcases my work, and provides information about me. I plan to add more features in the future.
+Welcome to my personal portfolio website, crafted using [Reflex](https://reflex.dev) - a powerful Python framework for modern web applications. This site serves as a showcase for my projects, skills, and professional journey. I'm continuously enhancing it with new features and content.
 
 ## 🛠️ Technologies Used
 
-- **Reflex**: A Python web framework designed for building modern web applications and websites.
-- **Python**: The programming language used to develop the website.
-- **HTML/CSS**: The standard web development languages used for creating the front-end.
-- **GitHub Pages**: The hosting platform used for deploying the website.
-- **[Rye](https://rye-up.com)**: A simple tool for creating and managing Python projects written in Rust.
-
-## 🛫 Getting Started
-
-1. Clone the repository using `git clone`.
-2. Install the required dependencies with `pip install .`
-3. Initialize Reflex with `reflex init`.
-4. Run the development server using `reflex run`.
-5. Visit `localhost:3000` in your web browser to access the website locally.
+- **Reflex**: A reactive Python web framework that simplifies building dynamic, responsive web applications
+- **Python**: Core programming language powering the backend logic and site functionality
+- **HTML/CSS**: Frontend languages for structure and styling, with responsive design principles
+- **Version Control**: Managed with Git for reliable code management and collaboration
 
 ## 🚀 Deployment
 
-This website is automatically deployed to GitHub Pages whenever new changes are pushed to the main branch. It's also possible to host it to other platforms such as Netlify by adjusting the GitHub Action. Side Note: In the Action I have to add a `.nojekyll` file to the `gh-pages` branch to prevent GitHub Pages from trying to build the website with Jekyll.
+This website is automatically deployed through [Railway](https://railway.com?referralCode=dLIOpU), providing seamless continuous integration and deployment. Railway offers an efficient platform for Reflex applications with minimal configuration needed.
+
+> *Note: The Railway link includes my referral code - using it supports my development work if you decide to try their service.*
 
 ## 📄 License
 
-This project is licensed under the GNU General Public License v3.0, which allows you to use, modify, and distribute the code for personal and commercial purposes. See [LICENSE](LICENSE) for more information.
+This project is licensed under the GNU General Public License v3.0, granting you the freedom to use, modify, and distribute this codebase for both personal and commercial purposes, with appropriate attribution. For complete details, please refer to the [LICENSE](LICENSE) file in this repository.
+
+## 📬 Contact
+
+Have questions or suggestions? Feel free to open an issue or reach out through the contact form on my website.
