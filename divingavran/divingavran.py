@@ -24,7 +24,12 @@ theme = rx.theme(
     appearance="dark", has_background=False, radius="medium", accent_color="green"
 )
 
-head_components = []
+head_components = [
+    rx.el.link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon.png"),
+    rx.el.link(rel="icon", type="image/png", sizes="32x32", href="/favicon-32x32.png"),
+    rx.el.link(rel="icon", type="image/png", sizes="16x16", href="/favicon-16x16.png"),
+    rx.el.link(rel="manifest", href="/site.webmanifest"),
+]
 is_production = str(os.environ.get("IS_PRODUCTION", "False")) == "True"
 if is_production:
     head_components.append(

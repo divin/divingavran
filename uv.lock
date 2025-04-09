@@ -192,7 +192,7 @@ wheels = [
 
 [[package]]
 name = "divingavran"
-version = "2.0.7"
+version = "2.0.11"
 source = { editable = "." }
 dependencies = [
     { name = "reflex" },
