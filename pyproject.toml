@@ -1,9 +1,9 @@
 [project]
 name = "divingavran"
-version = "2.0.14"
+version = "2.0.15"
 description = "My personal website."
 authors = [{ name = "Divin Gavran", email = "hello@divingavran.com" }]
-dependencies = ["reflex>=0.7.4"]
+dependencies = ["reflex>=0.7.7"]
 readme = "README.md"
 requires-python = ">= 3.12"
 

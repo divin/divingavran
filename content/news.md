@@ -1,5 +1,6 @@
 Here you'll find the latest news about my doings:
 
+- 20.04.2025: Released [Election Day](https://divin.bandcamp.com/track/election-day) 🎶
 - 13.04.2025: Released [Come On Feet](https://divin.bandcamp.com/track/come-on-feet) 🎶
 - 06.04.2025: Released [Back in India](https://divin.bandcamp.com/track/back-in-india) 🎶
 - 06.04.2025: Finished my new website! 🎉
