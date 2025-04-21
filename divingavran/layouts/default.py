@@ -43,7 +43,7 @@ def navigation_bar() -> rx.Component:
     return rx.flex(
         _navigation_item(text="Home", href="/"),
         _navigation_item(text="Games", href="/games"),
-        # _navigation_item(text="Apps", href="/apps"),
+        _navigation_item(text="Apps", href="/apps"),
         _navigation_item(text="Music", href="/music"),
         # _navigation_item(text="TIL", href="/til"),
         _navigation_item(text="About", href="/about"),

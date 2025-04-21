@@ -3,7 +3,7 @@ import os
 import reflex as rx
 
 from divingavran.constants import BACKGROUND_COLOR, FONT_COLOR, LINK_FONT_COLOR
-from divingavran.pages import about, error, games, home, music, news
+from divingavran.pages import about, apps, error, games, home, music, news
 
 style = {
     "color": FONT_COLOR,
@@ -57,6 +57,7 @@ app = rx.App(
 
 app.add_page(home(), title="Divin Gavran", route="/")
 app.add_page(error(), title="404 | Divin Gavran", route="/404")
+app.add_page(apps(), title="Apps | Divin Gavran", route="/apps")
 app.add_page(news(), title="News | Divin Gavran", route="/news")
 app.add_page(about(), title="About | Divin Gavran", route="/about")
 app.add_page(games(), title="Games | Divin Gavran", route="/games")
