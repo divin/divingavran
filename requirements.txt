@@ -27,12 +27,13 @@ granian==2.2.5
     # via reflex
 gunicorn==23.0.0
     # via reflex
-h11==0.14.0
+h11==0.16.0
     # via
+    #   divingavran (pyproject.toml)
     #   httpcore
     #   uvicorn
     #   wsproto
-httpcore==1.0.7
+httpcore==1.0.9
     # via httpx
 httpx==0.28.1
     # via
