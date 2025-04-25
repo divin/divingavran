@@ -11,28 +11,19 @@ anyio==4.9.0
     #   watchfiles
 bidict==0.23.1
     # via python-socketio
-build==1.2.2.post1
-    # via reflex
 certifi==2025.1.31
     # via
     #   httpcore
     #   httpx
-    #   requests
-charset-normalizer==3.4.1
-    # via
-    #   reflex
-    #   reflex-hosting-cli
-    #   requests
 click==8.1.8
     # via
     #   granian
+    #   reflex-hosting-cli
     #   typer
     #   uvicorn
-docutils==0.21.2
-    # via readme-renderer
 fastapi==0.115.12
     # via reflex
-granian==2.2.1
+granian==2.2.5
     # via reflex
 gunicorn==23.0.0
     # via reflex
@@ -47,26 +38,11 @@ httpx==0.28.1
     # via
     #   reflex
     #   reflex-hosting-cli
-id==1.5.0
-    # via twine
 idna==3.10
     # via
     #   anyio
     #   httpx
-    #   requests
-jaraco-classes==3.4.0
-    # via keyring
-jaraco-context==6.0.1
-    # via keyring
-jaraco-functools==4.1.0
-    # via keyring
 jinja2==3.1.6
-    # via
-    #   reflex
-    #   starlette-admin
-keyring==25.6.0
-    # via twine
-lazy-loader==0.4
     # via reflex
 mako==1.3.9
     # via alembic
@@ -78,19 +54,11 @@ markupsafe==3.0.2
     #   mako
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.6.0
-    # via
-    #   jaraco-classes
-    #   jaraco-functools
-nh3==0.2.21
-    # via readme-renderer
 packaging==24.2
     # via
-    #   build
     #   gunicorn
-    #   lazy-loader
     #   reflex
-    #   twine
+    #   reflex-hosting-cli
 platformdirs==4.3.7
     # via
     #   reflex
@@ -101,53 +69,30 @@ pydantic==2.11.2
     # via
     #   fastapi
     #   reflex
-    #   reflex-hosting-cli
     #   sqlmodel
 pydantic-core==2.33.1
     # via pydantic
 pygments==2.19.1
-    # via
-    #   readme-renderer
-    #   rich
-pyproject-hooks==1.2.0
-    # via build
+    # via rich
 python-engineio==4.11.2
-    # via
-    #   python-socketio
-    #   reflex
+    # via python-socketio
 python-multipart==0.0.20
-    # via
-    #   reflex
-    #   starlette-admin
+    # via reflex
 python-socketio==5.12.1
     # via reflex
 pyyaml==6.0.2
     # via reflex-hosting-cli
-readme-renderer==44.0
-    # via twine
 redis==5.2.1
     # via reflex
-reflex==0.7.5
+reflex==0.7.8
     # via divingavran (pyproject.toml)
-reflex-hosting-cli==0.1.36
+reflex-hosting-cli==0.1.43
     # via reflex
-requests==2.32.3
-    # via
-    #   id
-    #   requests-toolbelt
-    #   twine
-requests-toolbelt==1.0.0
-    # via twine
-rfc3986==2.0.0
-    # via twine
 rich==13.9.4
     # via
     #   reflex
     #   reflex-hosting-cli
-    #   twine
     #   typer
-setuptools==78.1.0
-    # via reflex
 shellingham==1.5.4
     # via typer
 simple-websocket==1.1.0
@@ -161,21 +106,11 @@ sqlalchemy==2.0.40
 sqlmodel==0.0.24
     # via reflex
 starlette==0.46.1
-    # via
-    #   fastapi
-    #   starlette-admin
-starlette-admin==0.14.1
-    # via reflex
+    # via fastapi
 tabulate==0.9.0
     # via reflex-hosting-cli
-tomlkit==0.13.2
-    # via reflex
-twine==6.1.0
-    # via reflex
 typer==0.15.2
-    # via
-    #   reflex
-    #   reflex-hosting-cli
+    # via reflex
 typing-extensions==4.13.1
     # via
     #   alembic
@@ -189,16 +124,10 @@ typing-extensions==4.13.1
     #   typing-inspection
 typing-inspection==0.4.0
     # via pydantic
-urllib3==2.3.0
-    # via
-    #   requests
-    #   twine
 uvicorn==0.34.0
     # via reflex
 watchfiles==1.0.4
     # via granian
-wheel==0.45.1
-    # via reflex
 wrapt==1.17.2
     # via reflex
 wsproto==1.2.0
