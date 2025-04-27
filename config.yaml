@@ -21,6 +21,7 @@ apps:
 # Music
 # - url: link to the music on Bandcamp
 music:
+  - url: https://divin.bandcamp.com/track/smack
   - url: https://divin.bandcamp.com/track/election-day
   - url: https://divin.bandcamp.com/track/come-on-feet
   - url: https://divin.bandcamp.com/track/back-in-india
