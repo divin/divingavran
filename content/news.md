@@ -1,5 +1,6 @@
 Here you'll find the latest news about my doings:
 
+- 04.05.2025: Released [Brasil](https://divin.bandcamp.com/track/brasil) 🎶
 - 27.04.2025: Released [Smack](https://divin.bandcamp.com/track/smack) 🎶
 - 21.04.2025: Added a dedicated apps page to my website! 🎉
 - 21.04.2025: Released [memento mori](https://divingavran.itch.io/memento-mori) 📱

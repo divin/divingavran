@@ -7,9 +7,28 @@ from divingavran.utilities import read_markdown_file
 
 
 class FormState(rx.State):
+    """State management for the contact form."""
+
     @rx.event
     async def handle_submit(self, form_data: dict):
-        """Handle the form submit."""
+        """Handle the form submission asynchronously.
+
+        This method takes the form data, adds the access key for web3forms,
+        and sends the data via a POST request. It then displays a success
+        or error toast message based on the response status.
+
+        Parameters
+        ----------
+        form_data : dict
+            A dictionary containing the data submitted through the contact form.
+            Expected keys are 'name', 'email', and 'message'.
+
+        Returns
+        -------
+        rx.event.EventSpec
+            A Reflex event spec that triggers either a success or error toast message
+            in the frontend.
+        """
         # Use your access key
         form_data["access_key"] = "09574d3b-79f2-46c3-914e-e3fb23f11225"
 
@@ -27,6 +46,17 @@ class FormState(rx.State):
 
 
 def contact() -> rx.Component:
+    """Create the contact form component.
+
+    This function builds a Reflex form component containing input fields for
+    name, email, and message, along with a submit button. The form submission
+    is handled by the `FormState.handle_submit` method.
+
+    Returns
+    -------
+    rx.Component
+        A Reflex form component for user contact.
+    """
     return rx.form(
         rx.flex(
             rx.heading("Contact Me 📧", size="5"),
@@ -63,6 +93,17 @@ def contact() -> rx.Component:
 
 
 def about() -> rx.Component:
+    """Create the About page component.
+
+    This function reads the content for the about page from a markdown file,
+    renders it using `rx.markdown`, includes the contact form component,
+    and wraps everything in the default layout.
+
+    Returns
+    -------
+    rx.Component
+        A Reflex component representing the complete About page.
+    """
     content = read_markdown_file("content/about.md")
     return default_layout(
         title="About 🙋",
