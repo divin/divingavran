@@ -6,6 +6,18 @@ from divingavran.utilities import read_markdown_file
 
 
 def home() -> rx.Component:
+    """Render the home page.
+
+    Reads introduction and news content from markdown files and displays
+    them within the default layout. The news section shows a preview
+    limited to a specific number of lines.
+
+    Returns
+    -------
+    rx.Component
+        A Reflex component representing the home page, including the
+        introduction, a link to the full news page, and a news preview.
+    """
     intro = read_markdown_file("content/home.md")
     news = read_markdown_file("content/news.md", number_of_lines=7)
     return default_layout(
