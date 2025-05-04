@@ -61,6 +61,8 @@ def _card(
             ),
             href=project_url,
             is_external=True,
+            data_umami_event="external_link_clicked",
+            data_umami_event_url=project_url,
         ),
         max_width=width,
         border_radius="0.5rem",
