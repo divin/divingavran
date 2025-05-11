@@ -21,6 +21,7 @@ apps:
 # Music
 # - url: link to the music on Bandcamp
 divin:
+  - url: https://divin.bandcamp.com/track/elevator-funk
   - url: https://divin.bandcamp.com/track/smack
   - url: https://divin.bandcamp.com/track/election-day
   - url: https://divin.bandcamp.com/track/come-on-feet
