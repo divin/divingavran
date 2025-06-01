@@ -1,5 +1,6 @@
 Here you'll find the latest news about my doings:
 
+- 01.06.2025: Released [Jazztastic](https://divin.bandcamp.com/track/jazztastic) 🎶
 - 25.05.2025: Released [Jazzy Bob](https://divin.bandcamp.com/track/jazzy-bob) 🎶
 - 18.05.2025: Released [IDFM](https://divin.bandcamp.com/track/idfm) 🎶
 - 11.05.2025: Released [Elevator Funk](https://divin.bandcamp.com/track/elevator-funk) 🎶
