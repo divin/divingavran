@@ -21,6 +21,7 @@ apps:
 # Music
 # - url: link to the music on Bandcamp
 divin:
+  - url: https://divin.bandcamp.com/track/sunday-afternoon
   - url: https://divin.bandcamp.com/track/jazztastic
   - url: https://divin.bandcamp.com/track/jazzy-bob
   - url: https://divin.bandcamp.com/track/idfm
