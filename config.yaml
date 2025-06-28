@@ -18,6 +18,10 @@ apps:
     image: "/images/apps/memento-mori.png"
     project_url: "https://divingavran.itch.io/memento-mori"
 
+  - name: "Kanji Match"
+    image: "/images/apps/kanji-match.png"
+    project_url: "https://divingavran.itch.io/kanji-match"
+
 # Music
 # - url: link to the music on Bandcamp
 divin:

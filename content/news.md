@@ -1,5 +1,6 @@
 Here you'll find the latest news about my doings:
 
+- 28.06.2025: Released [Kanji Match](https://divingavran.itch.io/kanji-match) 📱
 - 22.06.2025: Released [Sunday Afternoon](https://divin.bandcamp.com/track/sunday-afternoon) 🎶
 - 15.06.2025: Released [Samba](https://divin.bandcamp.com/track/samba) 🎶
 - 01.06.2025: Released [Jazztastic](https://divin.bandcamp.com/track/jazztastic) 🎶
