@@ -29,6 +29,16 @@ def apps() -> rx.Component:
                 content,
                 **MARKDOWN_PARAMS,  # type: ignore
             ),
-            *apps,
+            rx.flex(
+                *apps,
+                wrap="wrap",
+                gap="1.0em",
+                padding="0.5em",
+                direction="row",
+                align_items="stretch",
+                align_content="flex-start",
+                justify="center",
+                max_width="640px",
+            ),
         ],
     )
