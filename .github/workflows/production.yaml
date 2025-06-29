@@ -1,11 +1,12 @@
 name: Deploy to Railway (Production)
 
 on:
-  release:
-    types: [released]
+  push:
+    tags:
+      - "*" # Triggers on any tag push
 
 jobs:
-  deploy:
+  release-and-deploy:
     runs-on: ubuntu-latest
     container: ghcr.io/railwayapp/cli:latest
     env:
@@ -13,4 +14,20 @@ jobs:
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_PRODUCTION }}
     steps:
       - uses: actions/checkout@v3
-      - run: railway up --service=${{ env.SVC_ID }} --ci --environment production
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          body: |
+            Automated release for ${{ github.ref_name }}.
+            See the changelog or commit history for details.
+          draft: false
+          prerelease: false
+
+      - name: Deploy to Railway
+        run: railway up --service=${{ env.SVC_ID }} --ci --environment production
