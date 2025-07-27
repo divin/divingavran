@@ -4,7 +4,6 @@ anyio==4.9.0
 bidict==0.23.1
 certifi==2025.4.26
 click==8.2.0
--e file:///Users/divin/Documents/Code/Websites/divingavran
 fastapi==0.116.1
 granian==2.2.6
 h11==0.16.0
