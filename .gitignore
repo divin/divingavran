@@ -13,3 +13,4 @@ __pycache__/
 reflex.db
 .ropeproject
 .zed/
+.zed
