@@ -1,10 +1,13 @@
 [project]
 name = "divingavran"
-version = "2.1.13"
+version = "2.1.14"
 description = "My personal website."
 authors = [{ name = "Divin Gavran", email = "hello@divingavran.com" }]
-# NOTE: h11 was added directly as a lower version of h11 has a vulnerability
-dependencies = ["h11>=0.16.0", "reflex>=0.7.11", "starlette>=0.47.2"]
+dependencies = [
+    "pyyaml>=6.0.2",
+    "reflex>=0.8.10",
+    "starlette>=0.47.2",
+]
 readme = "README.md"
 requires-python = ">= 3.12"
 

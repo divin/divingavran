@@ -41,8 +41,7 @@ def music() -> rx.Component:
     """
     content = read_markdown_file("content/music.md")
     config = read_yaml("config.yaml")
-    divin_urls = config["divin"]
-    karasu_urls = config["karasu"]
+    divin_urls = config["music"]
     return default_layout(
         title="Music 🎶",
         components=[
@@ -50,21 +49,8 @@ def music() -> rx.Component:
                 content,
                 **MARKDOWN_PARAMS,  # type: ignore
             ),
-            rx.heading("Divin", size="5"),
             rx.flex(
                 *[embedded_player(**url) for url in divin_urls],
-                wrap="wrap",
-                gap="1.0em",
-                padding="0.5em",
-                direction="row",
-                align_items="stretch",
-                align_content="flex-start",
-                justify="center",
-                max_width="640px",
-            ),
-            rx.heading("Karasu-san", size="5"),
-            rx.flex(
-                *[embedded_player(**url) for url in karasu_urls],
                 wrap="wrap",
                 gap="1.0em",
                 padding="0.5em",

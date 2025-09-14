@@ -24,7 +24,10 @@ apps:
 
 # Music
 # - url: link to the music on Bandcamp
-divin:
+music:
+  - url: https://divin.bandcamp.com/track/neon-mirage
+  - url: https://divin.bandcamp.com/track/samba
+  - url: https://divin.bandcamp.com/track/brasil
   - url: https://divin.bandcamp.com/track/--16
   - url: https://divin.bandcamp.com/track/vibrant-mirage
   - url: https://divin.bandcamp.com/track/sunday-afternoon
@@ -48,10 +51,6 @@ divin:
   - url: https://divin.bandcamp.com/album/--2
   - url: https://divin.bandcamp.com/album/--4
   - url: https://divin.bandcamp.com/album/--5
-
-karasu:
-  - url: https://divin.bandcamp.com/track/samba
-  - url: https://divin.bandcamp.com/track/brasil
 
 # Social Media
 # name: name of the account

@@ -1,5 +1,6 @@
 Here you'll find the latest news about my doings:
 
+- 14.09.2025: Released [Neon Mirage](https://divin.bandcamp.com/track/neon-mirage) 🎶
 - 27.07.2025: Released [東京](https://divin.bandcamp.com/track/--16) 🎶
 - 29.06.2025: Released [Vibrant Mirage](https://divin.bandcamp.com/track/vibrant-mirage) 🎶
 - 28.06.2025: Released [Kanji Match](https://divingavran.itch.io/kanji-match) 📱
