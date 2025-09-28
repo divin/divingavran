@@ -1,6 +1,6 @@
 [project]
 name = "divingavran"
-version = "2.1.14"
+version = "2.1.15"
 description = "My personal website."
 authors = [{ name = "Divin Gavran", email = "hello@divingavran.com" }]
 dependencies = [

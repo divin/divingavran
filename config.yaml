@@ -25,6 +25,7 @@ apps:
 # Music
 # - url: link to the music on Bandcamp
 music:
+  - url: https://divin.bandcamp.com/track/yoru
   - url: https://divin.bandcamp.com/track/neon-mirage
   - url: https://divin.bandcamp.com/track/samba
   - url: https://divin.bandcamp.com/track/brasil
