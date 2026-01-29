@@ -11,9 +11,7 @@ Welcome to my personal portfolio website, crafted using [Reflex](https://reflex.
 
 ## 🚀 Deployment
 
-This website is automatically deployed through [Railway](https://railway.com?referralCode=dLIOpU), providing seamless continuous integration and deployment. Railway offers an efficient platform for Reflex applications with minimal configuration needed.
-
-> *Note: The Railway link includes my referral code - using it supports my development work if you decide to try their service.*
+I currently deploy the website locally and make it accessible via a public tunnel. Previously, I used Railway for deployment; although it is a paid service, it worked well for my needs.
 
 ## 📄 License
 

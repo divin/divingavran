@@ -35,22 +35,22 @@ if is_production:
     head_components.append(
         rx.el.script(
             defer=True,
-            src="https://cyber-earwig.pikapod.net/script.js",
-            data_website_id="b20f5d59-9995-4687-be19-dee4c854b25a",
+            src="https://umami.ryuusei.xyz/script.js",
+            data_website_id="e46fd728-ff49-410a-b5da-38e3f08384eb",
         )
     )
 else:
     head_components.append(
         rx.el.script(
             defer=True,
-            src="https://cyber-earwig.pikapod.net/script.js",
-            data_website_id="0d9d1f2b-b6fb-4859-9eab-46ca0602034d",
+            src="https://umami.ryuusei.xyz/script.js",
+            data_website_id="11822196-5339-4eae-8135-b4b02e78a752",
         )
     )
 
 app = rx.App(
     theme=theme,
-    style=style,  # type: ignore
+    style=style,
     head_components=head_components,
     stylesheets=stylesheets,
 )
