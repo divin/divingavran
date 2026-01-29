@@ -29,7 +29,7 @@ RUN pip install -r requirements.txt
 RUN reflex init
 
 # Download all npm dependencies and compile frontend
-RUN reflex export --frontend-only --no-zip && mv .web/_static/* /srv/ && rm -rf .web
+RUN reflex export --frontend-only --no-zip && mv .web/build/client/* /srv/ && rm -rf .web
 
 # Copy the start script to the container
 COPY start.sh /app/start.sh
