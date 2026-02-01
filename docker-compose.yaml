@@ -5,6 +5,8 @@ services:
       context: .
       dockerfile: Dockerfile
     restart: unless-stopped
+    networks:
+      - cloudflare
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.divingavran.rule=Host(`${DOMAIN_NAME}`)"
