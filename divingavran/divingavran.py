@@ -36,7 +36,7 @@ if is_production:
         rx.el.script(
             defer=True,
             src="https://umami.ryuusei.xyz/script.js",
-            data_website_id="e46fd728-ff49-410a-b5da-38e3f08384eb",
+            data_website_id="be7f117b-1ac5-4255-9174-240e8678bdee",
         )
     )
 else:
@@ -44,7 +44,7 @@ else:
         rx.el.script(
             defer=True,
             src="https://umami.ryuusei.xyz/script.js",
-            data_website_id="11822196-5339-4eae-8135-b4b02e78a752",
+            data_website_id="d44cc62e-606d-40ab-a2a9-fc3b57d00bec",
         )
     )
 
