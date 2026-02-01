@@ -1,0 +1,11 @@
+services:
+  divingavran:
+    container_name: divingavran
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.memento-mori.rule=Host(`${DOMAIN_NAME}`)"
+      - "traefik.http.services.memento-mori.loadbalancer.server.port=8080"
