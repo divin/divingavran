@@ -6,11 +6,13 @@ services:
       dockerfile: Dockerfile
       args:
         IS_PRODUCTION: ${IS_PRODUCTION}
+        API_URL: ${API_URL}
     restart: unless-stopped
     networks:
       - io-stack_cloudflare
     environment:
       - IS_PRODUCTION=${IS_PRODUCTION}
+      - API_URL=${API_URL}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.divingavran.rule=Host(`${DOMAIN_NAME}`)"
