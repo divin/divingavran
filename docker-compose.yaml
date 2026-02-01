@@ -4,9 +4,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        IS_PRODUCTION: ${IS_PRODUCTION}
     restart: unless-stopped
     networks:
       - io-stack_cloudflare
+    environment:
+      - IS_PRODUCTION=${IS_PRODUCTION}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.divingavran.rule=Host(`${DOMAIN_NAME}`)"
