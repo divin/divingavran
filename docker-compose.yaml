@@ -6,12 +6,12 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     networks:
-      - cloudflare
+      - io_cloudflare
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.divingavran.rule=Host(`${DOMAIN_NAME}`)"
       - "traefik.http.services.divingavran.loadbalancer.server.port=8080"
 
 networks:
-  cloudflare:
+  io_cloudflare:
     external: true
