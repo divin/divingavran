@@ -30,7 +30,7 @@ head_components = [
     rx.el.link(rel="icon", type="image/png", sizes="16x16", href="/favicon-16x16.png"),
     rx.el.link(rel="manifest", href="/site.webmanifest"),
 ]
-is_production = str(os.environ.get("IS_PRODUCTION", "False")) == "True"
+is_production = str(os.environ.get("IS_PRODUCTION", "False")).lower() == "true"
 if is_production:
     head_components.append(
         rx.el.script(
