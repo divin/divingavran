@@ -9,3 +9,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.divingavran.rule=Host(`${DOMAIN_NAME}`)"
       - "traefik.http.services.divingavran.loadbalancer.server.port=8080"
+
+networks:
+  cloudflare:
+    external: true
