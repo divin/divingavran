@@ -9,4 +9,4 @@ fi
 caddy start &
 
 # Start Reflex backend
-reflex run --env prod --backend-only --loglevel debug
+reflex run --env prod --backend-only --loglevel debug --port 8000
