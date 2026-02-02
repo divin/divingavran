@@ -35,7 +35,7 @@ if is_production:
     head_components.append(
         rx.el.script(
             defer=True,
-            src="http://umami:3000/script.js",
+            src="https://umami.ryuusei.xyz/script.js",
             data_website_id="be7f117b-1ac5-4255-9174-240e8678bdee",
         )
     )
@@ -43,7 +43,7 @@ else:
     head_components.append(
         rx.el.script(
             defer=True,
-            src="http://umami:3000/script.js",
+            src="https://umami.ryuusei.xyz/script.js",
             data_website_id="d44cc62e-606d-40ab-a2a9-fc3b57d00bec",
         )
     )
