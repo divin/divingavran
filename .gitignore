@@ -1,16 +1,2 @@
-assets/external/
-.states
-*.aseprite
-*.db
-*.py[cod]
-*.pyc
 .DS_Store
-.ruff_cache/
-.venv/
-.vscode
-.web
-__pycache__/
-reflex.db
-.ropeproject
-.zed/
-.zed
+public/

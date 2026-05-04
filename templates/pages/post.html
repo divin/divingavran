@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <article>
+        {% if page.date %}
+            <p>{{ page.date }}</p>
+        {% endif %}
+        {{ page.content | safe }}
+    </article>
+{% endblock content %}

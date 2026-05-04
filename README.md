@@ -1,17 +1,16 @@
 # 🏠 My Personal Website
 
-Welcome to my personal portfolio website, crafted using [Reflex](https://reflex.dev) - a powerful Python framework for modern web applications. This site serves as a showcase for my projects, skills, and professional journey. I'm continuously enhancing it with new features and content.
+Welcome to my personal portfolio website, crafted using [Zola](https://www.getzola.org) and hosted on GitHub Pages. This project serves as a showcase of my skills, projects, and experiences in the tech industry.
 
 ## 🛠️ Technologies Used
 
-- **Reflex**: A reactive Python web framework that simplifies building dynamic, responsive web applications
-- **Python**: Core programming language powering the backend logic and site functionality
+- **[Zola](https://www.getzola.org/)**: A static site generator that allows for fast and efficient website creation, with a focus on simplicity and performance.
 - **HTML/CSS**: Frontend languages for structure and styling, with responsive design principles
 - **Version Control**: Managed with Git for reliable code management and collaboration
 
 ## 🚀 Deployment
 
-I currently deploy the website locally and make it accessible via a public tunnel. Previously, I used Railway for deployment; although it is a paid service, it worked well for my needs.
+This website is built with Zola and automatically deployed to GitHub Pages using GitHub Actions. The site is rebuilt and published whenever changes are pushed to the main branch.
 
 ## 📄 License
 

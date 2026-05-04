@@ -1,0 +1,18 @@
+@use "../base/variables";
+
+header {
+    margin-bottom: 2rem;
+
+    h1 {
+        margin: 0 0 0.75rem;
+        color: variables.$color-text;
+        font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+        line-height: 1.08;
+    }
+
+    p {
+        margin: 0;
+        max-width: 65ch;
+        color: variables.$color-text-muted;
+    }
+}

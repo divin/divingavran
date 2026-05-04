@@ -1,0 +1,83 @@
+[[items]]
+title = "Beginning 👶"
+kind = "life event"
+description = "I was born."
+date = "1995-XX-XX"
+
+[[items]]
+title = "Creative Journey 🥁"
+kind = "life event"
+description = "Started playing drums."
+date = "2003-05-01"
+
+[[items]]
+title = "Academic Milestone 📚"
+kind = "life event"
+description = "Started Bachelor's studies in Physics."
+date = "2016-04-01"
+
+[[items]]
+title = "Career Milestone 🐍"
+kind = "life event"
+description = "Wrote my first line of code in Python."
+date = "2018-10-01"
+
+[[items]]
+title = "International Experience 🇯🇵"
+kind = "life event"
+description = "Internship at High Energy Astrophysics Laboratory at Saitama University in Japan."
+date = "2019-03-01"
+
+[[items]]
+title = "Bachelor's Completed 🎓"
+kind = "life event"
+description = "Graduated with Bachelor's degree in Physics, specializing in computer physics."
+date = "2021-03-15"
+
+[[items]]
+title = "Master's Begins 📚"
+kind = "life event"
+description = "Started Master's studies in Physics."
+date = "2021-11-01"
+
+[[items]]
+title = "Research Published 📰"
+kind = "life event"
+description = "Paper on X-ray reprocessing in accreting pulsar GX 301-2 published in MNRAS."
+date = "2021-02-01"
+
+[[items]]
+title = "Career Milestone 💼"
+kind = "life event"
+description = "Started working as Data Scientist."
+date = "2023-03-01"
+
+[[items]]
+title = "Thesis Published 📊"
+kind = "life event"
+description = "Master's thesis on Deep Learning for X-Ray Scattering Data published."
+date = "2023-03-15"
+
+[[items]]
+title = "Master's Completed 🎓"
+kind = "life event"
+description = "Graduated with Master's degree in Physics."
+date = "2023-03-20"
+
+[[items]]
+title = "New Family Member 🐶"
+kind = "life event"
+description = "Adopted a dog named Yuki."
+date = "2023-04-23"
+
+[[items]]
+title = "New Website Launched 🚀"
+kind = "life event"
+description = "Launched my new personal website."
+date = "2025-04-06"
+
+[[items]]
+title = "Apps Section Added 📱"
+kind = "life event"
+description = "Added a dedicated apps page to showcase my projects."
+date = "2025-04-21"

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ page.title }}
+{% endblock title %}
+
+{% block content %}
+    <section class="project-page">
+        {% set data = load_data(path="content/games/games.toml") %}
+        {% set projects = data.items | sort(attribute="date") | reverse %}
+
+        {% set theme_colors = load_data(path="content/themes.toml") %}
+        {% set theme_name = config.extra.theme %}
+        {% set theme = theme_colors.themes[theme_name] %}
+
+        {% set embed_type = "image" %}
+        {% set embed_class = "game-embed" %}
+        {% include "components/project.html" %}
+    </section>
+{% endblock content %}

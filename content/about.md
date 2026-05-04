@@ -1,9 +1,16 @@
-Hey there! 👋 I'd describe myself as a curious learner and a jack of all trades. I've had quite a journey, working my way up from "Hauptschule" in Germany (the lower secondary school) to earning a **Master's degree in Physics** and now **working as a Data Scientist**. Along the way, I've been fortunate to explore various fields, including electrical engineering, environmental technology, physics, and machine learning.
++++
+title = "About"
+description = "A little bit about me and my journey in the world of programming and game development."
+render = true
+template = "pages/about.html"
+date = 2026-05-01
+updated = 2026-05-04
++++
 
-During my physics studies, I learned how to **program with Python**, perform **data analysis and visualization**, create **simulations of physical systems**, and apply **machine learning** techniques. My bachelor thesis focused on **planet formation simulations** using [PLUTO](https://plutocode.ph.unito.it) and [CUDA](https://developer.nvidia.com/cuda-toolkit). For my master thesis, I had the opportunity to explore **Deep Learning** and its applications in scientific research, helping to optimize an object detection model with **[PyTorch](https://pytorch.org)** and **[Optuna](https://optuna.org)** to improve accuracy in detecting diffraction peaks in **[Grazing incidence X-ray diffraction](https://en.wikipedia.org/wiki/Grazing_incidence_diffraction)**.
+Hey there! 👋 I'm a curious learner and creative developer. I worked my way from "Hauptschule" in Germany to earning a **Master's degree in Physics**, and now I work as a **Data Scientist**. During my studies, I learned **Python**, **data analysis**, **simulations**, and **machine learning**, applying these skills in research on planet formation and Deep Learning for X-ray diffraction analysis.
 
-Today, I work as a **Data Scientist**, though my role involves wearing many hats. I contribute to **data analysis and visualization** for generating insights, **model training and deployment** to enhance online marketing strategies, **creating data pipelines** for ensuring data quality, implementing **anomaly detection** to identify issues, and developing **automations** to streamline processes.
+Today, my role involves **data analysis**, **model training and deployment**, **data pipelines**, **anomaly detection**, and **automations**. Beyond work, I love **creating things**: music, games, apps, and occasionally art. Game development is especially rewarding as it blends programming, art, and music together.
 
-In my free time, **I enjoy creating things**. I make music, develop games and apps, and occasionally draw. Game development is especially rewarding as it combines many things I love: **programming**, **art**, and **music**. I also enjoy **playing video games** and **reading books** (almost daily!). Besides tech, I speak **German** (native), **English** (fluent), and I'm currently learning **Japanese** (I've learned about 700 Kanji and 1,400 vocabulary words so far!). I'm always excited to learn new technologies and keep up with the latest trends in **artificial intelligence** and **machine learning**.
+I also enjoy **playing games**, **reading books**, and learning languages. I speak **German** (native), **English** (fluent), and **Japanese** (currently learning). I'm always excited about **AI** and **machine learning** trends.
 
-If you're interested in learning more about my work or collaborating on a project, feel free to reach out to me. I'd love to connect and discuss potential opportunities!
+If you want to learn more, check out my [**journey**](/journey/) for a visual timeline, or my [**blog**](/blog/) for thoughts on programming, game development, and data science. Feel free to reach out if you'd like to collaborate! 🚀

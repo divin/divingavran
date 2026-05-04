@@ -1,0 +1,52 @@
+<nav class="site-nav" aria-label="Main navigation">
+    <a href="{{ config.base_url }}"
+       {% if current_path == "/" %}aria-current="page"{% endif %}>
+        Home
+    </a>
+
+    {% set in_projects = current_path is starting_with("/games")
+        or current_path is starting_with("/apps")
+        or current_path is starting_with("/music") %}
+
+    <div class="site-nav__group">
+        <button
+            class="site-nav__toggle{% if in_projects %} is-in-section{% endif %}"
+            type="button"
+            aria-expanded="false"
+            aria-controls="projects-menu"
+            aria-haspopup="true">
+            Projects
+            <span class="site-nav__chevron" aria-hidden="true">▾</span>
+        </button>
+
+        <div
+            id="projects-menu"
+            class="site-nav__submenu"
+            hidden>
+            <a href="{{ get_url(path='@/games/index.md') }}"
+               {% if current_path is starting_with("/games") %}aria-current="page"{% endif %}>
+                Games
+            </a>
+
+            <a href="{{ get_url(path='@/apps/index.md') }}"
+               {% if current_path is starting_with("/apps") %}aria-current="page"{% endif %}>
+                Apps
+            </a>
+
+            <a href="{{ get_url(path='@/music/index.md') }}"
+               {% if current_path is starting_with("/music") %}aria-current="page"{% endif %}>
+                Music
+            </a>
+        </div>
+    </div>
+
+    <!--- <a href="{{ get_url(path='@/blog/_index.md') }}"
+       {% if current_path is starting_with("/blog") %}aria-current="page"{% endif %}>
+        Blog
+    </a> -->
+
+    <a href="{{ get_url(path='@/about.md') }}"
+       {% if current_path == "/about/" %}aria-current="page"{% endif %}>
+        About
+    </a>
+</nav>

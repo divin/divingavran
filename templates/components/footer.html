@@ -1,0 +1,14 @@
+<footer>
+    {% if config.extra.social_links %}
+    <ul>
+        {% for social in config.extra.social_links %}
+        <li>
+            <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer" data_umami_event="social-link-click" data_umami_event_url="{{ social.url }}">
+                <i class="{{ social.icon }}"></i>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <p><a href="{{ config.base_url }}"><script>document.write(new Date().getFullYear());</script> &copy; {{ config.author }}</a></p>
+</footer>
