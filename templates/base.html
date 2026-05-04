@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="{{ config.extra.theme }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            {% block window_title %}
+                {% if page and page.title %}
+                    {{ page.title }} | {{ config.title }}
+                {% elif section and section.title %}
+                    {{ section.title }} | {{ config.title }}
+                {% else %}
+                    {{ config.title }}
+                {% endif %}
+            {% endblock window_title %}
+        </title>
+        <link rel="icon" href="/favicon.ico">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" href="{{ get_url(path='main.css') }}">
+        <script defer src="{{ get_url(path='scripts/navbar.js') }}"></script>
+    </head>
+    <body>
+        <div class="page">
+            {% include "components/navbar.html" %}
+
+            <main>
+                {% include "components/header.html" %}
+                {% block content %}
+                {% endblock content %}
+            </main>
+
+            {% include "components/last-updated.html" %}
+            {% include "components/footer.html" %}
+        </div>
+    </body>
+</html>

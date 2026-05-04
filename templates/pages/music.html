@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% include "components/content.html" %}
+    <section class="project-page">
+        {% set data = load_data(path="content/music/music.toml") %}
+        {% set projects = data.items | sort(attribute="date") | reverse %}
+
+        {% set theme_colors = load_data(path="content/themes.toml") %}
+        {% set theme_name = config.extra.theme %}
+        {% set theme = theme_colors.themes[theme_name] %}
+
+        {% set embed_type = "iframe" %}
+        {% set embed_class = "project-embed" %}
+        {% include "components/project.html" %}
+    </section>
+{% endblock content %}

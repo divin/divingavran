@@ -1,0 +1,53 @@
+<div class="project-grid">
+    {% for project in projects %}
+        {% if embed_type == "image" %}
+            <a href="{{ project.url }}" class="project-card-link" target="_blank" rel="noopener noreferrer" data_umami_event="project-link-click" data_umami_event_url="{{ project.url }}">
+                <article class="project-card">
+                    <div class="{{ embed_class }}">
+                        <img
+                            src="{{ get_url(path=project.image) }}"
+                            alt="Screenshot of {{ project.title }}"
+                        >
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title">
+                            {{ project.title }}
+                            {% if project.date %}
+                                <span class="project-date">({{ project.date }})</span>
+                            {% endif %}
+                        </h2>
+
+                        {% if project.description %}
+                            <p class="project-description">{{ project.description }}</p>
+                        {% endif %}
+                    </div>
+                </article>
+            </a>
+        {% elif embed_type == "iframe" %}
+            <article class="project-card">
+                <div class="{{ embed_class }}">
+                    <iframe
+                        title="Bandcamp player for {{ project.title }}"
+                        loading="lazy"
+                        src="https://bandcamp.com/EmbeddedPlayer/url={{ project.url | urlencode | replace(from="/", to="%2F") }}/size=large/bgcol={{ theme.background }}/linkcol={{ theme.primary }}/minimal=true"
+                        seamless
+                    ></iframe>
+                </div>
+
+                <div class="project-body">
+                    <h2 class="project-title">
+                        {{ project.title }}
+                        {% if project.date %}
+                            <span class="project-date">({{ project.date }})</span>
+                        {% endif %}
+                    </h2>
+
+                    {% if project.description %}
+                        <p class="project-description">{{ project.description }}</p>
+                    {% endif %}
+                </div>
+            </article>
+        {% endif %}
+    {% endfor %}
+</div>

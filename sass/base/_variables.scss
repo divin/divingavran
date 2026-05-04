@@ -1,0 +1,41 @@
+// Typography
+$font-body: "Lato", sans-serif;
+
+$themes: (
+    "default": (
+        "color-bg": #242121,
+        "color-surface": #3f3d3d,
+        "color-border": #8a8786,
+        "color-text": #e6e1df,
+        "color-text-muted": #9c9593,
+        "color-text-inverse": #e6e1df,
+        "color-primary": #f05a28,
+        "color-primary-hover": #ff7447,
+        "color-primary-active": #d94d20,
+    ),
+);
+
+:root {
+    @each $key, $value in map-get($themes, "default") {
+        --#{$key}: #{$value};
+    }
+}
+
+@each $theme-name, $theme-colors in $themes {
+    html[data-theme="#{$theme-name}"] {
+        @each $key, $value in $theme-colors {
+            --#{$key}: #{$value};
+        }
+    }
+}
+
+// Sass aliases for CSS vars
+$color-bg: var(--color-bg);
+$color-surface: var(--color-surface);
+$color-border: var(--color-border);
+$color-text: var(--color-text);
+$color-text-muted: var(--color-text-muted);
+$color-text-inverse: var(--color-text-inverse);
+$color-primary: var(--color-primary);
+$color-primary-hover: var(--color-primary-hover);
+$color-primary-active: var(--color-primary-active);

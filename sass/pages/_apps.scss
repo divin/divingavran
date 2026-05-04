@@ -1,0 +1,6 @@
+@use "../components/project";
+
+.app-embed {
+    @extend .project-embed;
+    aspect-ratio: 63 / 50;
+}

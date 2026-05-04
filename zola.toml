@@ -1,0 +1,23 @@
+# The URL the site will be built for
+base_url = "https://divingavran.com"
+title = "Divin Gavran"
+author = "Divin Gavran"
+
+compile_sass = true
+generate_sitemap = true
+build_search_index = false
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+theme = "default"
+social_links = [
+  { name = "GitHub", url = "https://github.com/divin", icon = "fab fa-github" },
+  { name = "YouTube", url = "https://www.youtube.com/@divingavran" , icon = "fab fa-youtube" },
+  { name = "Itch.io", url = "https://divingavran.itch.io/", icon = "fab fa-itch-io" },
+  { name = "Bandcamp", url = "https://divin.bandcamp.com/", icon = "fab fa-bandcamp" },
+  { name = "SoundCloud", url = "https://soundcloud.com/divingavran", icon = "fab fa-soundcloud" },
+]

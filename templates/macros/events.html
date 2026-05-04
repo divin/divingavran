@@ -1,0 +1,65 @@
+{% macro render(limit=10) %}
+
+{% set events = load_data(path="content/journey/events.toml") %}
+{% set games = load_data(path="content/games/games.toml") %}
+{% set apps = load_data(path="content/apps/apps.toml") %}
+{% set music = load_data(path="content/music/music.toml") %}
+{% set items = events.items
+    | concat(with=games.items)
+    | concat(with=apps.items)
+    | concat(with=music.items)
+    | sort(attribute="date")
+    | reverse %}
+
+{% if limit > 0 %}
+    {% set items = items | slice(end=limit) %}
+{% endif %}
+
+<div class="timeline" aria-label="Timeline of events">
+    {% for item in items %}
+        {% if item.kind == "game" %}
+            {% set title = "New Game 🎮" %}
+            {% set description = "Released [" ~ item.title ~ "](" ~ item.url ~ ")" %}
+            {% set kind = "game" %}
+        {% elif item.kind == "app" %}
+            {% set title = "New App 📱" %}
+            {% set description = "Released [" ~ item.title ~ "](" ~ item.url ~ ")" %}
+            {% set kind = "app" %}
+        {% elif item.kind == "music" %}
+            {% set title = "New Music 🎵" %}
+            {% set description = "Released [" ~ item.title ~ "](" ~ item.url ~ ")" %}
+            {% set kind = "music" %}
+        {% else %}
+            {% set title = item.title %}
+            {% set description = item.description %}
+            {% set kind = "event" %}
+        {% endif %}
+
+        {% set alternate = loop.index0 % 2 == 0 %}
+        {% if alternate %}
+            {% set side = "left" %}
+        {% else %}
+            {% set side = "right" %}
+        {% endif %}
+
+        <div class="timeline__item timeline__item--{{ kind }} timeline__item--{{ side }}">
+            <div class="timeline__date">{{ item.date }}</div>
+            <div class="timeline__content">
+                <h3 class="timeline__title">{{ title | markdown(inline=true) | safe }}</h3>
+                <div class="timeline__description">{{ description | markdown | safe }}</div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% if limit > 0 %}
+    <div class="timeline__end">
+        <div class="timeline__end-line"></div>
+        <div class="timeline__dots">⋮</div>
+        <a href="{{ get_url(path='@/journey/index.md') }}" class="timeline__more-link">
+            See my full journey
+        </a>
+    </div>
+{% endif %}
+
+{% endmacro render %}

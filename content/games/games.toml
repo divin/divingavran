@@ -1,0 +1,26 @@
+[[items]]
+title = "Last Steps Home"
+date = "2026-04-26"
+kind = "game"
+image = "images/games/last-steps-home.png"
+url = "https://divingavran.itch.io/last-steps-home"
+embed = "https://itch.io/embed/4516111?linkback=true&amp;dark=true"
+description = "A cosmic horror platformer where you race against a decay wave to reunite with your wife. Made in 3 days with Bevy."
+
+[[items]]
+title = "Siege of Syracuse"
+date = "2024-05-08"
+kind = "game"
+image = "images/games/siege-of-syracuse.png"
+url = "https://divingavran.itch.io/siege-of-syracuse"
+embed = "https://itch.io/embed/4516111?linkback=true&amp;dark=true"
+description = "An action game where you help Archimedes defend Syracuse using reflective mirrors to destroy Roman ships. Manage the mirror's heat and survive five waves of attacks."
+
+[[items]]
+title = "Double Check"
+date = "2024-04-21"
+kind = "game"
+image = "images/games/double-check.png"
+url = "https://divingavran.itch.io/double-check"
+embed = "https://itch.io/embed/4516111?linkback=true&amp;dark=true"
+description = "A puzzle game where you help Jerry prepare for a special event by double-checking he has all the items he needs before leaving. Simple, charming, and fun!"

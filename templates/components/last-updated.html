@@ -1,0 +1,5 @@
+{% if page and page.updated %}
+<div class="last-updated">
+    <p>Last updated: <time datetime="{{ page.updated }}">{{ page.updated | date(format="%B %d, %Y") }}</time></p>
+</div>
+{% endif %}
