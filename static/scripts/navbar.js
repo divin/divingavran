@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
         otherMenu.hidden = true;
       });
 
-      if (!isOpen) {
+      if (isOpen) {
+        closeMenu();
+      } else {
         openMenu();
       }
     };
