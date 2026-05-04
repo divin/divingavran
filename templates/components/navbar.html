@@ -1,5 +1,5 @@
 <nav class="site-nav" aria-label="Main navigation">
-    <a href="{{ config.base_url }}"
+    <a href="{{ get_url(path='/') }}"
        {% if current_path == "/" %}aria-current="page"{% endif %}>
         Home
     </a>
