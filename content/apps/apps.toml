@@ -2,7 +2,7 @@
 title = "memento mori"
 date = "2025-04-21"
 kind = "app"
-image = "/images/apps/memento-mori.png"
+image = "images/apps/memento-mori.png"
 url = "https://divingavran.itch.io/memento-mori"
 description = "A Playdate app that reflects on the preciousness of time by displaying your estimated life expectancy, remaining time in years/months/weeks/days, and the percentage of your life already lived."
 
@@ -10,6 +10,6 @@ description = "A Playdate app that reflects on the preciousness of time by displ
 title = "Kanji Match"
 date = "2025-06-28"
 kind = "app"
-image = "/images/apps/kanji-match.png"
+image = "images/apps/kanji-match.png"
 url = "https://divingavran.itch.io/kanji-match"
 description = "A cross-platform educational game to master visually similar Japanese kanji. Connect your WaniKani account, practice distinguishing look-alike kanji, and track your progress with stats and spaced repetition."
