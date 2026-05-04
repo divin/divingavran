@@ -13,4 +13,4 @@ Today, my role involves **data analysis**, **model training and deployment**, **
 
 I also enjoy **playing games**, **reading books**, and learning languages. I speak **German** (native), **English** (fluent), and **Japanese** (currently learning). I'm always excited about **AI** and **machine learning** trends.
 
-If you want to learn more, check out my [**journey**](/journey/) for a visual timeline, or my [**blog**](/blog/) for thoughts on programming, game development, and data science. Feel free to reach out if you'd like to collaborate! 🚀
+If you want to learn more, check out my [**journey**](/journey/) for a visual timeline. Feel free to reach out if you'd like to collaborate! 🚀
