@@ -3,7 +3,7 @@
 
 {% block content %}
     {% include "components/content.html" %}
-    <section
+    <section>
         <h2>What's happening recently?</h2>
         {{ events::render(limit=3) }}
     </section>
