@@ -2,14 +2,8 @@
 {% import "macros/events.html" as events %}
 
 {% block content %}
-    <p>
-        {% if page and page.content %}
-            {{ page.content | safe }}
-        {% elif section and section.content %}
-            {{ section.content | safe }}
-        {% endif %}
-    </p>
-    <section>
+    {% include "components/content.html" %}
+    <section
         <h2>What's happening recently?</h2>
         {{ events::render(limit=3) }}
     </section>

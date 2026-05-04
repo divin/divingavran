@@ -10,5 +10,5 @@
         {% endfor %}
     </ul>
     {% endif %}
-    <p><a href="{{ config.base_url }}"><script>document.write(new Date().getFullYear());</script> &copy; {{ config.author }}</a></p>
+    <p><a href="/">{{ now() | date(format="%Y") }} &copy; {{ config.author }}</a></p>
 </footer>
