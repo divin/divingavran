@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {{ page.content | safe }}
+    <p>
+        {% if page and page.content %}
+            {{ page.content | safe }}
+        {% elif section and section.content %}
+            {{ section.content | safe }}
+        {% endif %}
+    </p>
 {% endblock content %}

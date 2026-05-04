@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <p>
+        {% if page and page.content %}
+            {{ page.content | safe }}
+        {% elif section and section.content %}
+            {{ section.content | safe }}
+        {% endif %}
+    </p>
     <ul>
         {% for page in section.pages %}
         <li>

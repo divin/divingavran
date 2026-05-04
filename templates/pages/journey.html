@@ -2,5 +2,12 @@
 {% import "macros/events.html" as events %}
 
 {% block content %}
+    <p>
+        {% if page and page.content %}
+            {{ page.content | safe }}
+        {% elif section and section.content %}
+            {{ section.content | safe }}
+        {% endif %}
+    </p>
     {{ events::render(limit=-1) }}
 {% endblock content %}

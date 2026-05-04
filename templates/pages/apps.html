@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}
-    {{ page.title }}
-{% endblock title %}
-
 {% block content %}
+    <p>
+        {% if page and page.content %}
+            {{ page.content | safe }}
+        {% elif section and section.content %}
+            {{ section.content | safe }}
+        {% endif %}
+    </p>
     <section class="project-page">
         {% set data = load_data(path="content/apps/apps.toml") %}
         {% set projects = data.items | sort(attribute="date") | reverse %}
