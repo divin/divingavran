@@ -1,4 +1,13 @@
 [[items]]
+title = "No Invaders Allowed"
+date = "2026-06-24"
+kind = "game"
+image = "images/games/no-invaders-allowed.png"
+url = "https://slightlyoddstudio.itch.io/no-invaders-allowed"
+embed = "https://itch.io/embed/4705716?linkback=true&amp;dark=true"
+description = "A fast arcade action game where you control an Orbital Defense satellite, circling Earth and blasting alien ships before they break through your defenses."
+
+[[items]]
 title = "Last Steps Home"
 date = "2026-04-26"
 kind = "game"
