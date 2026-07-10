@@ -4,7 +4,7 @@ description = "A collection of games I have created over the years."
 render = true
 template = "pages/games.html"
 date = 2026-05-01
-updated = 2026-05-04
+updated = 2026-07-10
 +++
 
 In my childhood, I was a huge fan of video games. I spent countless hours playing them. Nowadays, I find myself more often **creating games** than playing them. I absolutely love the process of game creation, even if finishing a game is a rare event for me.
