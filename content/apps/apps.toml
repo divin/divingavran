@@ -13,3 +13,11 @@ kind = "app"
 image = "images/apps/kanji-match.png"
 url = "https://divingavran.itch.io/kanji-match"
 description = "A cross-platform educational game to master visually similar Japanese kanji. Connect your WaniKani account, practice distinguishing look-alike kanji, and track your progress with stats and spaced repetition."
+
+[[items]]
+title = "Tana"
+date = "2025-10-14"
+kind = "app"
+image = "images/apps/tana.png"
+url = "https://github.com/divin/tana"
+description = "A self-hosted watch-history tracker for Jellyfin."
