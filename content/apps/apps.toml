@@ -16,7 +16,7 @@ description = "A cross-platform educational game to master visually similar Japa
 
 [[items]]
 title = "Tana"
-date = "2025-10-14"
+date = "2026-10-14"
 kind = "app"
 image = "images/apps/tana.png"
 url = "https://github.com/divin/tana"
