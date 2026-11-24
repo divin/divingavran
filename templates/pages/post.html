@@ -3,7 +3,7 @@
 {% block content %}
     <article>
         {% if page.date %}
-            <p>{{ page.date }}</p>
+            <p><time datetime="{{ page.date }}">{{ page.date }}</time></p>
         {% endif %}
         {{ page.content | safe }}
     </article>

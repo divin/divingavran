@@ -4,6 +4,31 @@ html {
     min-height: 100%;
 }
 
+.skip-link {
+    position: absolute;
+    top: -4rem;
+    left: 0.5rem;
+    z-index: 999;
+    padding: 0.75rem 1.25rem;
+    background-color: variables.$color-surface;
+    color: variables.$color-text;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 body {
     margin: 0;
     min-height: 100%;
@@ -43,6 +68,11 @@ a:focus {
 }
 
 a:focus-visible {
+    outline: 2px solid variables.$color-primary;
+    outline-offset: 2px;
+}
+
+.site-nav__toggle:focus-visible {
     outline: 2px solid variables.$color-primary;
     outline-offset: 2px;
 }

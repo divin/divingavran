@@ -27,9 +27,11 @@
     </head>
     <body>
         <div class="page">
+            <a class="skip-link" href="#main-content">Skip to main content</a>
+
             {% include "components/navbar.html" %}
 
-            <main>
+            <main id="main-content">
                 {% include "components/header.html" %}
                 {% block content %}
                 {% endblock content %}

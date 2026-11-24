@@ -1,19 +1,14 @@
-{% macro render(limit=10) %}
+{% component events.render(limit) %}
 
 {% set events = load_data(path="content/journey/events.toml") %}
 {% set games = load_data(path="content/games/games.toml") %}
 {% set apps = load_data(path="content/apps/apps.toml") %}
 {% set music = load_data(path="content/music/music.toml") %}
-{% set items = events.items
-    | concat(with=games.items)
-    | concat(with=apps.items)
-    | concat(with=music.items)
+{% set items = [...events.items, ...games.items, ...apps.items, ...music.items]
     | sort(attribute="date")
     | reverse %}
 
-{% if limit > 0 %}
-    {% set items = items | slice(end=limit) %}
-{% endif %}
+{% set items = items[:limit] if limit > 0 else items %}
 
 <div class="timeline" aria-label="Timeline of events">
     {% for item in items %}
@@ -55,11 +50,11 @@
 {% if limit > 0 %}
     <div class="timeline__end">
         <div class="timeline__end-line"></div>
-        <div class="timeline__dots">⋮</div>
+        <div class="timeline__dots" aria-hidden="true">⋮</div>
         <a href="{{ get_url(path='@/journey/index.md') }}" class="timeline__more-link">
             See my full journey
         </a>
     </div>
 {% endif %}
 
-{% endmacro render %}
+{% endcomponent events.render %}

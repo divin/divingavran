@@ -1,7 +1,6 @@
 {% extends "base.html" %}
-{% import "macros/events.html" as events %}
 
 {% block content %}
     {% include "components/content.html" %}
-    {{ events::render(limit=-1) }}
+    {{<events.render limit={-1} />}}
 {% endblock content %}

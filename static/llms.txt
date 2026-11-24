@@ -1,0 +1,42 @@
+# Divin Gavran
+
+> Personal website of Divin Gavran: a Data Scientist with a Physics background (Master's) who builds games, apps, and music. This page summarises the site for AI agents.
+
+## About
+
+- **Profession:** Data Scientist — data analysis, model training and deployment, data pipelines, anomaly detection, automations. Learned Python, simulations, and machine learning during a Master's in Physics (research on planet formation and Deep Learning for X-ray diffraction analysis).
+- **Creative work:** Game development (formerly Playdate, now cross-platform with Bevy, a Rust game engine), web apps, and music — sampling-based beats released under the name _Divin_ (formerly also _Karasu-san_).
+- **Languages:** German (native), English (fluent), Japanese (learning).
+- **Interests:** AI and machine learning, playing games, reading books.
+
+## Pages
+
+- [Home](https://www.divingavran.com/): site overview plus a "What's happening recently?" timeline of the latest releases.
+- [About](https://www.divingavran.com/about/): background, education, work, and interests.
+- [Games](https://www.divingavran.com/games/): games Divin has created, with links to itch.io.
+- [Apps](https://www.divingavran.com/apps/): apps Divin has created.
+- [Music](https://www.divingavran.com/music/): music releases with embedded Bandcamp players.
+- [Journey](https://www.divingavran.com/journey/): a life timeline of milestones, achievements, and creative releases.
+
+## Notable projects
+
+- [No Invaders Allowed](https://slightlyoddstudio.itch.io/no-invaders-allowed) (2026): fast arcade action game — defend Earth from an orbital satellite.
+- [Last Steps Home](https://divingavran.itch.io/last-steps-home) (2026): cosmic horror platformer made in 3 days with Bevy.
+- [Siege of Syracuse](https://divingavran.itch.io/siege-of-syracuse) (2024): action game about Archimedes defending Syracuse with mirrors.
+- [Double Check](https://divingavran.itch.io/double-check) (2024): charming puzzle game about double-checking before leaving.
+- [Tana](https://github.com/divin/tana) (2026): privacy-friendly, self-hosted watch-history tracker for Jellyfin.
+- [Kanji Match](https://divingavran.itch.io/kanji-match) (2025): cross-platform app for mastering visually similar Japanese kanji with WaniKani integration.
+- [memento mori](https://divingavran.itch.io/memento-mori) (2025): Playdate app reflecting on the preciousness of time.
+
+## External profiles
+
+- [GitHub](https://github.com/divin)
+- [itch.io](https://divingavran.itch.io/)
+- [Bandcamp](https://divin.bandcamp.com/)
+- [SoundCloud](https://soundcloud.com/divingavran)
+- [YouTube](https://www.youtube.com/@divingavran)
+
+## Notes for AI agents
+
+- A machine-readable page list is available in [sitemap.xml](https://www.divingavran.com/sitemap.xml).
+- Contact: reach out via any of the external profiles above.

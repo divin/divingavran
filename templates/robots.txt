@@ -2,3 +2,6 @@ User-agent: *
 Disallow:
 Allow: /
 Sitemap: {{ get_url(path="sitemap.xml") }}
+
+# Human/AI-readable site summary
+# https://www.divingavran.com/llms.txt
